@@ -1,4 +1,4 @@
-# Member Rental Agreement
+# Member Agreement
 
 ### Parties
 
