@@ -1,47 +1,33 @@
-# Workshop Rental Agreement
+# Member Rental Agreement
 
-## Parties
+### Parties
 
-This Agreement is made between _________ listed below in Contact Information, called "Member” and ________ as listed below in Contact Information, called “Treasurer” and _____, as listed below in Contact Information, called "Community Manager", on behalf of the entire membership of ___entity___ for use of the shared space at 544 Park Ave #332, Brooklyn, NY 11205, called “Workshop” for the purposes of office work, mechanics, electronics, woodworking, metalworking, and other industrial arts.
+This Agreement is made between 
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, called "Member” and 
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, called “Treasurer” and 
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, called "Community Manager", on behalf of the entire Membership of BKIC for use of the shared space at 544 Park Ave #332, Brooklyn, NY 11205, called “Workshop” for the purposes of office work, mechanics, electronics, woodworking, metalworking, and other industrial arts.
 
-## Contact Information
+### Responsibilities
 
-### Member
-Name: 
-Address: 
-Phone: 
-Email: 
+- Member agrees to abide by the Code of Conduct.
+- Member agrees participate in and abide by decisions made collectively by the Membership according to the Operating Agreement.
+- Member agrees to abide by the primary lease.
+- Payment is due to the Treasurer, without demand, on or before the first of each month during the agreement period.
+	- The total payment due each month is $\_\_\_\_\_\_\_\_\_ plus the Member's share of any expenses incurred by the Membership, which is to be announced by the Treasurer each month.
+	- The Security Deposit due at signing is $\_\_\_\_\_\_\_\_\_ payable to the Treasurer.
 
-### Treasurer
-Name: 
-Address: 
-Phone: 
-Email: 
+### Rental Term
 
-### Community Manager
-Name: 
-Address: 
-Phone: 
-Email: 
+Beginning on \_\_\_\_\_\_\_\_\_, the Community Manager will provide the Member access to and use of the Workshop. This agreement will renew on a monthly basis unless there is written notice between the Community Manager and Member at least 90 days before the end of any renewal term. If the Member neglects to provide the required notice prior to vacating the Workshop, the member forfeits their security deposit.
 
-## Responsibilities
+Treasurer (sign): \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
 
-Member agrees to abide by the Code of Conduct.
-Member agrees to participate in and abide by decisions made collectively by the membership according to the Operating Agreement.
-Member agrees to abide by the primary lease.
+(print): \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Date: \_\_\_\_\_\_\_\_\_
 
-## Rental Term
+Community Manager (sign): \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
 
-Beginning on ____________ called “Begin Date,” the Community Manager will provide the Member access to and use of the Workshop. This Agreement will renew on a monthly basis unless there is written notice between the Treasurer and Member at least 90 days before the end of any renewal term. If the Member neglects to provide the required notice prior to vacating the Workshop, the member forfeits their security deposit.
+(print): \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Date: \_\_\_\_\_\_\_\_\_
 
-## Payment
+Member (sign): \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
 
-a) Payment is due to the Treasurer, without demand, on or before the first of each month during the agreement period.
-b) The total payment due each month is $______ plus the Member's share of any expenses incurred by the membership, which is to be announced by the Treasurer each month.
-
-Treasurer (sign): _________________________________
-Treasurer (print): _________________________________ Date: ___________
-Community Manager (sign): _________________________________
-Community Manager (print): _________________________________ Date: ___________
-Member (sign): __________________________ 
-Member (print): __________________________ Date: ___________
+(print): \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Date: \_\_\_\_\_\_\_\_\_
