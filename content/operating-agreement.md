@@ -1,4 +1,4 @@
-# Brooklyn Industrial Arts Collective
+# Operating Agreement
 
 ## Purpose
 
@@ -6,7 +6,7 @@ To provide affordable and functional workshop space, tools, and a community of l
 
 ## Assets
 
-The proto-coop owns no assets. Any expenses incurred or consumable materials required will be funded by contribution of the Members.
+The organization owns no assets. Any expenses incurred or consumable materials required will be funded by contribution of the Members.
 
 ## Membership
 
