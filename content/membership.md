@@ -9,15 +9,18 @@ menu = "main"
 
 BKIC is a shop, collective, and a place for people to make physical projects come to life. We do share resources and spend a lot of time observing and helping out with each others’ projects, but the shop itself is set up such that each Member has their own dedicated workbench/desk.
 
+Interested? [Let us know how you want to use the shop!](https://docs.google.com/forms/d/e/1FAIpQLSfuNXVlvfGhaNH_uV8uBMtWSCDZVuUFS4AMfYnVAnCtPwQzGQ/viewform)
+
 ### BKIC Membership Options
 
 ---
 
-BKIC offers 1 membership option at the moment:
+BKIC offers 2 membership options at the moment:
 
 | Type                   |                Workspace                 |                   Access                    |             Price             |
 | ---------------------- | :--------------------------------------: | :-----------------------------------------: | :---------------------------: |
 | Full Voting Membership | Bring your own workbench + common tables | 24/7  access + space for large project work | Split % of Rent and Shop fees |
+| Full access to tools | common tables and space | 24/7  access | $299/month |
 
 ---
 
