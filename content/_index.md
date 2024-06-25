@@ -12,4 +12,4 @@ BKIC is a community of makers, designers, and engineers who share tools, knowled
 
 BKIC also hosts a range of in-person events, including hardware happy hours, community laser nights, and periodic shop hangs.
 
-[Email us and become a member today!](mailto:info@bkic.shop)
+Interested? [Let us know how you want to use the shop!](https://docs.google.com/forms/d/e/1FAIpQLSfuNXVlvfGhaNH_uV8uBMtWSCDZVuUFS4AMfYnVAnCtPwQzGQ/viewform)
