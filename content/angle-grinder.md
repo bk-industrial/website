@@ -7,10 +7,11 @@ Angle grinders are versatile tools that are also extremely dangerous. This grind
 - Wear safety glasses and hearing protection and a full face shield.
 - Use a mask or respirator for breathing protection whenever grinding that creates metal or wood dust.
 - Do not wear jewelry or clothing with ties or other loose dangly bits. Tie up long hair.
-- Wear the appropriate gloves to protect against sparks or wood debris.
+- Wear appropriate gloves - heavy leather for grinding metal or snug fitting gloves for other materials. Do not wear loose floppy gloves.
 - Wear long sleeves when grinding metal to protect against sparks or other flying debris.
 - When starting the grinder, hold it firmly with both hands to compensate for the rotational forces.
 - Never swing the grinder while it is on and always be aware of your surroundings and limbs when using it.
+- Never lay the grinder down on the disc. The back of the grinder has flats for this purpose.
 
 ## Assembly Information:
 

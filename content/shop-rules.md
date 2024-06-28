@@ -23,16 +23,19 @@ The shop manager is responsible for monitoring the consumables and condition of 
 
 ## Projects Left in the Shop
 
-Users should take care to leave the shop in a useful state. If you must leave a project in the shop, it's best to communicate this via appropriate channels so that others can continue to use the shop, and so that if other users need to move your project, they can do so safely. The appropriate channels are as follows:
+Users should take care to leave the shop in a useful state. If you must leave a project in the shop, it's best to communicate this via appropriate channels so that others can continue to use the shop, and so that if others need to move your project, they can do so safely. The appropriate channels are as follows:
 
-- Post to Signal for immediate and temporary conditions, such as that you've left a glue-up or paint job. Say when it will be safe to move, even if you'll be in to move it soon.
+- Post to Signal for immediate and temporary conditions, such as that you've left a glue-up or paint job. Tell us when it will be safe to move, even if you'll be in to move it soon.
 - Create a calendar event for ongoing occupations. If you've got a rush job and need to destroy the shop for a weekend, other people can see the event and coordinate with you.
 
 Projects left in the shop should be treated with care and respect. Before moving a project, check the channels above for instructions and contact the owner.
 
 ## Trash and Scrap
 
-We don't want to become timber hoarders, but we are frugal people who abhor waste. We maintain the following waste streams:
+We don't want to become timber hoarders, but we are frugal people who abhor waste. 
+Feel free to make use of anything in the scrap bin or drum, and anything in the vertical stock storage if it is not labelled (though if it's nice, or if you think you know whose it is, ask before you cut it up.)
+
+We maintain the following waste streams:
 
 ### Clean Wood Scrap
 
