@@ -1,12 +1,14 @@
-# Operating Agreement
+# New York Industrial Proto-Cooperative Bylaws
+
+Real co-op bylaws have to satisfy some legal conditions, these are merely an agreement between shopmates.
 
 ## Purpose
 
-To provide affordable and functional workshop space, tools, and a community of like-minded shopmates.
+To provide affordable and functional workshop space, tools, and a community of like-minded shopmates WHO ARE NOT NAZIS
 
 ## Assets
 
-The organization owns no assets. Any expenses incurred or consumable materials required will be funded by contribution of the Members.
+The proto-coop owns no assets. Any expenses incurred or consumable materials required will be funded by contribution of the Members.
 
 ## Membership
 
@@ -50,4 +52,10 @@ For those decisions the board is not empowered to take, it will produce proposal
 
 Popular votes by the membership will be decided by simple majority, except:
 
-- Commiting to increasing our monthly fees, such as by subscribing to a service, renting a new space, etc., will require unanimous consent
+- Actions that will require a supermajority (3/4rds, rounded up to the nearest whole person):
+- Kicking out a member, who are in good standing regarding the code of conduct
+
+Actions requiring unanimous consent:
+
+- Adding a new member
+- Adding a monthly expense
