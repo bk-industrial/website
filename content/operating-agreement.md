@@ -1,4 +1,4 @@
-# New York Industrial Proto-Cooperative Bylaws
+# Brooklyn Industrial Arts Bylaws
 
 Real co-op bylaws have to satisfy some legal conditions, these are merely an agreement between shopmates.
 
