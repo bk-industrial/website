@@ -5,9 +5,9 @@ menu = "main"
 
 # Shop Information
 
-BKIC members get access inventory storage, and easy shipping & receiving of palletized goods, and communal workspace. BKIC is located in the heart of North Brooklyn’s product distribution district, making it an ideal place to build and ship your product, sculpture, or other project.
+Brooklyn Industrial Arts members get access inventory storage, and easy shipping & receiving of palletized goods, and communal workspace. Brooklyn Industrial Arts is located in the heart of North Brooklyn’s product distribution district, making it an ideal place to build and ship your product, sculpture, or other project.
 
-BKIC allows memebers to bring their own workbench and tools. Members may share their tools as projects require from one another. We are a community of makers, designers, and engineers who share tools, knowledge, and space. Our shop is equipped with a range of member owned tools. 
+Brooklyn Industrial Arts allows memebers to bring their own workbench and tools. Members may share their tools as projects require from one another. We are a community of makers, designers, and engineers who share tools, knowledge, and space. Our shop is equipped with a range of member owned tools. 
 
 ## Shop Amenities
 
@@ -26,8 +26,8 @@ BKIC allows memebers to bring their own workbench and tools. Members may share t
 
 ## Insurance
 
-BKIC will hold general liability insurance for the shared common area and for the lease. We ask all members to hold their own general liability insurance naming BKIC as an additioanlly insured party.
+Brooklyn Industrial Arts will hold general liability insurance for the shared common area and for the lease. We ask all members to hold their own general liability insurance naming Brooklyn Industrial Arts as an additionally insured party.
 
-It can be hard to find the right insurance for what you plan to work on at BKIC. We've prepared a helpful guide with a few insurers members have worked with before. [Check it out here](/insurance).
+It can be hard to find the right insurance for what you plan to work on at Brooklyn Industrial Arts. We've prepared a helpful guide with a few insurers members have worked with before. [Check it out here](/insurance).
 
 

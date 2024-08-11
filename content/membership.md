@@ -5,22 +5,22 @@ menu = "main"
 
 # Membership
 
-**Become a member at BKIC!**
+**Become a member at Brooklyn Industrial Arts!**
 
-BKIC is a shop, collective, and a place for people to make physical projects come to life. We do share resources and spend a lot of time observing and helping out with each others’ projects, but the shop itself is set up such that each Member has their own dedicated workbench/desk.
+Brooklyn Industrial Arts is a shop, collective, and a place for people to make physical projects come to life. We do share resources and spend a lot of time observing and helping out with each others’ projects, but the shop itself is set up such that each Member has their own dedicated workbench/desk.
 
-Interested? [Let us know how you want to use the shop!](https://docs.google.com/forms/d/e/1FAIpQLSfuNXVlvfGhaNH_uV8uBMtWSCDZVuUFS4AMfYnVAnCtPwQzGQ/viewform)
+Interested? [Let us know how you want to use the shop!](https://docs.google.com/forms/d/e/1FAIpQLSfuNXVlvfGhaNH_uV8uBMtWSCDZVuUFS4AMfYnVAnCtPwQzGQ/viewform) or [send us an email](mailto:info@bkindustrial.art) to schedule a tour or learn more.
 
-### BKIC Membership Options
+### Membership Options
 
 ---
 
-BKIC offers 2 membership options at the moment:
+Brooklyn Industrial Arts offers 2 membership options at the moment:
 
 | Type                   |                Workspace                 |                   Access                    |             Price             |
 | ---------------------- | :--------------------------------------: | :-----------------------------------------: | :---------------------------: |
 | Full Voting Membership | Bring your own workbench + common tables | 24/7  access + space for large project work | Split % of Rent and Shop fees |
-| Full access to tools | common tables and space | 24/7  access | $299/month |
+| Full access to tools   |         common tables and space          |                24/7  access                 |          $300/month           |
 
 ---
 
@@ -29,4 +29,4 @@ Full membership is a percentage of the operating costs given the number of peopl
 
 All memberships come with 24/7 building access.
 
-[Email us to schedule a tour and start building!](mailto:info@BKIC.shop)
+[Email us to schedule a tour and start building!](mailto:info@bkindustrial.art)
