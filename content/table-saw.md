@@ -55,3 +55,13 @@ Cutting a piece of wood into shorter pieces. For solid wood, that's across the g
 ### Joinery cuts
 
 Such as cutting tenons, dadoes, rabbets, etc.
+
+## Maintenance
+
+The general purpose blade installed in the saw is:
+[Amana 610400 10" 40t 5/8" bore](https://www.amanatool.com/610400-carbide-tipped-general-purpose-10-inch-dia-x-40t-atb-15-deg-5-8-inch-bore.html)
+
+
+Sawblade sharpening is available from:
+- [Burns Tools](https://www.burnstools.com/blade-sharpening/form)
+- [CT Saw](https://ctsaw.com/sharpening-service/)
