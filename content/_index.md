@@ -13,5 +13,3 @@ We're located in north Brooklyn at 544 Park Ave, Suite 332, Brooklyn NY 11205.
 Interested? [Let us know how you want to use the shop!](https://docs.google.com/forms/d/e/1FAIpQLSfuNXVlvfGhaNH_uV8uBMtWSCDZVuUFS4AMfYnVAnCtPwQzGQ/viewform) or [send us an email](mailto:info@bkindustrial.art) to schedule a tour or learn more.
 
 ![](/images/IMG_5145.jpeg)
-
-IMG_5154.jpeg
