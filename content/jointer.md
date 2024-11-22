@@ -58,6 +58,15 @@ Once a workpiece has two planar, perpendicular reference faces, it is ready for 
   - Use a push block in your left hand to press the stock against the fence. It’s useful to do a dry run where you can find out if the bottom or the top tends to come off the fence, and adjust your technique as necessary.
   - Use your right hand to drive the stock through the jointer. Keep hands 6” above the table - when jointing smaller stock, it will be necessary to use a push block or push stick. Consider your strategy before turning on the machine.
 
+## Maintenance
+
+Manual: [Wadkin Bursgreen 9-1/4"](https://www.wadkin.com/archive%20pdfs/Wadkin%20BFT%209%20inch%20Planer%20Manual%20Parts%20List.pdf)
+
+### Knives
+
+Per the manual The knives are 9-1/4" long, 1-1/4" wide, 1/8" thick. They can be ground to between 30 and 45 degrees, for soft and hard wood respectively.
+A Helical cutter head is available from [Shelix](https://shelixheads.com/SHELIX_for_wadkin_bursgreen_9-25_inch_Jointer)
+
 ### Wiring Diagram
 
 <img src="jointer-wiring.png" alt="Wiring Diagram showing four wires from inside of motor connecting to terminals 3 and 4. Swap Black and Green wires at terminals 3 and 4 to reverse." width="800"/>
