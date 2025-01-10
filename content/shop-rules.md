@@ -11,6 +11,8 @@ Tools are classified into three tiers:
 - Tier 2: Tools which pose some danger, but whose safe usage is simple. Members must read the safety documentation and sign a statement before use.
 - Tier 3: Tools which pose some danger to the user, or can cause expensive damage, or whose safe usage is complicated. Members must receive training before use.
 
+[Tool Manuals](../tools)
+
 ## Tool Maintenance
 
 Please report issues with tools to the Shop Manager and the tool owner as soon as possible. If there is a safety concern, lock out the tool (unplug and tape a sign over the power switch).
