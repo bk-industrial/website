@@ -1,6 +1,6 @@
 # SUBLEASE AGREEMENT
 
-This Sublease Agreement (the "Agreement") is made on [DATE] between G. Ochoa LLC ("Sublessor") and [SUBLESSEE NAME] ("Sublessee").
+This Sublease Agreement (the "Agreement") is made on _____________ between G. Ochoa LLC ("Sublessor") and ________________________ ("Sublessee").
 
 WHEREAS, Sublessor leases certain premises located at 544 Park Ave, Suite 332, New York, NY 12205 (the "Premises") and wishes to sublease a portion of the Premises to Sublessee.
 
@@ -42,9 +42,11 @@ SUBLESSOR:
 G. Ochoa LLC
 
 By: ________________________
-    Gabriel Ochoa, Member
+
+Print Name: Gabriel Ochoa, Member
 
 SUBLESSEE:
 
 By: ________________________
-    [SUBLESSEE NAME]
+
+Print Name: ________________________
