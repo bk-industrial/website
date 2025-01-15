@@ -1,4 +1,4 @@
-# Bandsaw - 
+# Bandsaw
 
 ## Delta 14"
 

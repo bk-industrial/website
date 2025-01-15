@@ -1,6 +1,6 @@
 # Ulmia Woodworking Bench
 
-<img src="ulmia-bench.JPG" alt="Ulmia Woodworking Bench" width="800"/>
+![Ulmia Woodworking Bench](/images/ulmia-bench.JPG)
 
 This bench is used for hand tool woodworking.
 

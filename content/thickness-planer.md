@@ -1,6 +1,6 @@
 # Planer - [Dewalt DW735 13” Planer](https://www.dewalt.com/product/dw735/13-three-knife-two-speed-thickness-planer)
 
-<img src="dewalt-planer-1.JPG" alt='Dewalt 13" Planer' width="800"/>
+![Dewalt 13" Planer](/images/dewalt-planer-1.JPG)
 
 A planer creates a parallel surface by dragging the reference surface of the wood across the flat steel base plate and using rotating blades to cut the top surface.  
 The best time to use a planer is after you have used the jointer to flatten one surface and the object is twice as wide as it is tall. Particularly for objects of the inappropriate ratio, consider using the table saw to create a parallel cut.
