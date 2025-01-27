@@ -5,6 +5,7 @@ menu = "main"
 
 # Shop Information
 
+
 Brooklyn Industrial Arts members get access inventory storage, and easy shipping & receiving of palletized goods, and communal workspace. Brooklyn Industrial Arts is located in the heart of North Brooklyn’s product distribution district, making it an ideal place to build and ship your product, sculpture, or other project.
 
 Brooklyn Industrial Arts allows memebers to bring their own workbench and tools. Members may share their tools as projects require from one another. We are a community of makers, designers, and engineers who share tools, knowledge, and space. Our shop is equipped with a range of member owned tools. 
@@ -13,7 +14,10 @@ Shop rules are available [here](/operations/shop-rules) and the tools available 
 
 ![](/images/IMG_5150.jpeg)
 
+----
+
 ## Shop Amenities
+
 
 - 24/7 access
 - 2,000 sq ft of shared workspace
@@ -28,6 +32,8 @@ Shop rules are available [here](/operations/shop-rules) and the tools available 
 - 24/7/365 shop access
 - Freight elevator & active loading dock
 - Friendly folks to bounce technical ideas off of and commiserate with.
+
+---
 
 ## Insurance
 
