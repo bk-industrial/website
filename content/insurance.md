@@ -19,7 +19,7 @@ We normally see this costing around $200/year but it is fully dependant on the t
 
 Here's a script to start your phone calls or emails with:
 
-"I'm renting a space where I'm doing <activities> with <tools>. I need a $1M/$2M liability policy to cover myself and my landlord needs to be an additionally insured party."
+"I'm renting a space where I'm doing &lt;activities> with &lt;tools>. I need a $1M/$2M liability policy to cover myself and my landlord needs to be an additionally insured party."
 
 ### Where to Buy
 

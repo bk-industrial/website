@@ -1,6 +1,6 @@
 # Jointer - [Wadkin Bursgreen 9-1/4"](https://www.wadkin.com/archive%20pdfs/Wadkin%20BFT%209%20inch%20Planer%20Manual%20Parts%20List.pdf)
 
-<img src="wadkin-jointer.JPG" alt="Wadkin Bursgreen 9BFT Jointer" width="800"/>
+![Wadkin Bursgreen 9BFT Jointer](/images/wadkin-jointer.JPG)
 
 A jointer provides two basic operations:
 
@@ -69,4 +69,4 @@ A Helical cutter head is available from [Shelix](https://shelixheads.com/SHELIX_
 
 ### Wiring Diagram
 
-<img src="jointer-wiring.png" alt="Wiring Diagram showing four wires from inside of motor connecting to terminals 3 and 4. Swap Black and Green wires at terminals 3 and 4 to reverse." width="800"/>
+![Wiring Diagram showing four wires from inside of motor connecting to terminals 3 and 4. Swap Black and Green wires at terminals 3 and 4 to reverse.](/images/jointer-wiring.png)
