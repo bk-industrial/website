@@ -1,131 +1,26 @@
 # Tools
 
-## Tier 1
+---
 
-### Rigid Vacuum
+See the [Shop Rules](/operations/shop-rules) for information on tool maintenance, training requirements.
 
-Owner: Jesse
+---
 
-### Small Shop Vac
-
-Owner: David
-
-### Large Shop Vac
-
-Owner: David
-
-## Tier 2
-
-### Makita 4-1/2" Angle Grinder (corded)
-
-Manual: [Angle Grinder](/angle-grinder)
-
-Owner: Josef
-
-### Ryobi 4-1/2" Angle Grinder (corded)
-
-Manual: [Angle Grinder](/angle-grinder)
-
-Owner: Jesse
-
-### Dewalt 13" Thickness Planer
-
-Manual: [planer](/thickness-planer)
-
-Owner: Jesse
-
-### Hand Tool Bench
-
-Manual: [Hand Tool Bench](/hand-tool-bench)
-
-Owner: Jesse
-
-### Delta Radial Drill Press
-
-Manual:
-
-Owner: David
-
-### 6" Pedestal Grinder
-
-Manual: [Pedestal Grinder](/pedestal-grinder)
-
-Owner: Josef
-
-## Tier 3
-
-### Bosch Sliding Compound Miter Saw
-
-Manual:
-
-Owner: Zaq
-
-Qualified Users:
-- Joss
-- William
-- Otis
-
-### X-Carve CNC Router
-
-Manual: [Cnc Router](/cnc-router)
-
-Owner: Rohan
-
-Qualified Users:
-
-### Jet Hybrid Tablesaw (JT PS10TS)
-
-Manual: [Table Saw](/table-saw)
-
-Owner: Zaq
-
-Qualified Users:
-- Joss
-- James
-- Gabe
-- William
-- Otis
-
-### Omtech Laser Cutter
-
-Manual: [Laser Cutter](/laser-cutter)
-
-Owner: Gabe + Brad
-
-Qualified Users:
-- Jack
-- Jesse
-- Otis
-
-### Delta 14" Bandsaw
-
-Manual: [Bandsaw](/bandsaw)
-
-Owner: Josef
-
-Qualified Users:
-- Joss
-- William
-
-### Grizzly 14" Bandsaw w/ riser block
-
-Manual: [Bandsaw](/bandsaw)
-
-Owner: David
-
-Qualified Users:
-- Joss
-- William
-
-### Wadkin Bursgreen 9-1/4" Jointer
-
-Manual: [Jointer](/jointer)
-
-Owner: Josef
-
-Qualified Users:
-- Joss
-- James
-- Gabe
-- William
-
+| Tool                                                  | [Tier](/operations/shop-rules#tool-use) | Owner       | Trained                          |
+| ----------------------------------------------------- | --------------------------------------- | ----------- | -------------------------------- |
+| Rigid Vacuum                                          | Tier 1                                  | Jesse       |                                  |
+| Small Shop Vac                                        | Tier 1                                  | David       |                                  |
+| Large Shop Vac                                        | Tier 1                                  | David       |                                  |
+| [Makita 4-1/2" Angle Grinder (corded)](angle-grinder) | Tier 2                                  | Josef       |                                  |
+| [Ryobi 4-1/2" Angle Grinder (corded)](angle-grinder)  | Tier 2                                  | Jesse       |                                  |
+| [Dewalt 13" Thickness Planer](thickness-planer)       | Tier 2                                  | Jesse       | Joss, William                    |
+| [Hand Tool Bench](hand-tool-bench)                    | Tier 2                                  | Jesse       |                                  |
+| Delta Radial Drill Press                              | Tier 2                                  | David       | William, Otis                    |
+| [6" Pedestal Grinder](pedestal-grinder)               | Tier 2                                  | Josef       |                                  |
+| Bosch Sliding Compound Miter Saw                      | Tier 3                                  | Zaq         | Joss, William, Otis              |
+| [X-Carve CNC Router](cnc-router)                      | Tier 3                                  | Rohan       |                                  |
+| [Jet Hybrid Tablesaw (JT PS10TS)](table-saw)          | Tier 3                                  | Zaq         | Joss, James, Gabe, William, Otis |
+| [Omtech Laser Cutter ](laser-cutter)                  | Tier 3                                  | Gabe + Brad |                                  |
+| [Delta 14" Bandsaw](bandsaw)                          | Tier 3                                  | Josef       | Joss, William                    |
+| [Grizzly 14" Bandsaw  w/ riser block](bandsaw)        | Tier 3                                  | David       | Joss, William                    |
+| [Wadkin Bursgreen 9-1/4" Jointer](jointer)            | Tier 3                                  | Josef       | Joss, James, Gabe, William       |
