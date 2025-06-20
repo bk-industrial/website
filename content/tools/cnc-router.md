@@ -60,6 +60,24 @@ The X-Carve CNC router works on an XY plane with limited Z-depth, with a work en
 - The CNC coordinate system is in milimeters.
 - The maximum cutting rate of the machine is 2500mm/min.
 
+### Speeds and Feeds
+ 
+There's a lot going on in a rotating tool cutting material. Here are the basic parameters for side-milling (i.e. moving a rotating tool in X and Y without plunging):
+- Depth of cut - The axial dimension of the part of the tool engaged in the cut.
+- Step over - The radial dimension of the part of the tool engaged in the cut, expressed as a ratio to the tool diameter. A tool cutting a slot of its own width is at 100% step-over.
+- Spindle speed - The angular speed of the tool.
+- Feed rate - The linear speed of the tool and spindle with reference to the work.
+To achieve good performance, these must be balanced. The chart below shows the consequences of extreme feeds and speeds:
+
+| -           | Low RPM                            | Medium RPM           | High RPM               |
+| ----------- | ---------------------------------- | -------------------- | ---------------------- |
+| Fast Feed   | Too much chip load - tool breakage | Fastest removal rate | Too fast - fire hazard |
+| Medium Feed | Best tool life                     | Best surface finish  | Too fast - fire hazard |
+| Slow Feed   | Poor surface finish                | Poor tool life       | Too fast - fire hazard |
+
+Feed rate is related to depth and step over. You can feed faster with lower stepover or lower depth of cut.
+Feed rate is also related to the number of flutes on the tool. More flutes allows for higher speeds, as each flute takes a smaller chip.
+
 ## Workholding
 
 Workholding is a an extremely complicated topic and is core to achieving accurate parts as well as avoiding damage to parts, the machine, and the operator. The strategies provided below can only scratch the surface of how to succesfully, efficiently, and safely secure work to the machine bed.
