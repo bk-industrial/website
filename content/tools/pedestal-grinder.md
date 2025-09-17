@@ -16,3 +16,7 @@
 - Dress the wheels frequently using the spur tool. Rest the lugs of the tool on the grinding rest and let the spinning spurs do the work. The wheel is normally dressed with a slight crown across the face and sharp corners.
 - Adjust the grinding rest to provide the angle you require rather than working freehand whenever possible.
 - Use water to cool the part frequently. For delicate heat treated parts, only grind for a second or two between dips.
+
+## Tool Owner
+
+- Josef

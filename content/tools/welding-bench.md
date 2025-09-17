@@ -43,3 +43,7 @@ While the bench is mostly self explanatory, a few notes are in order:
 - There is a set of punches nearby - always use a matching set of male punch and female die. Punches (RW 300170) and dies (RW 310210) include: 3/16”, ¼”, and ½” diameters
 - This Whitney Jensen model is similar to the Roper Whitney #17. [Punch sets](https://www.roperwhitney.com/our-products/no-17-type-o-round-punch-die-set/) are available from Roper Whitney and used ones are often on eBay.
 - The thickness of material to be punched should not exceed the diameter of the punch - i.e. you cannot punch a ⅛” hole in ¼” plate.
+
+## Tool Owner
+
+- Josef

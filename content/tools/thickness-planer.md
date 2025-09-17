@@ -48,3 +48,7 @@ The best time to use a planer is after you have used the jointer to flatten one 
 - Reminder: do not put your hands into the planer for any reason while it is plugged in.
 - After your material has been planed, lower the cutting height by 1/4 to 1/2 of a turn of the handle at each pass following the cutting depths indicated by the safety section above.
 - In order to wear the cutting knives down evenly, send material through the planer at a different location width wise each time.
+
+## Tool Owner
+
+- Jesse

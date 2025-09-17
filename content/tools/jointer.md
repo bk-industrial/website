@@ -70,3 +70,7 @@ A Helical cutter head is available from [Shelix](https://shelixheads.com/SHELIX_
 ### Wiring Diagram
 
 ![Wiring Diagram showing four wires from inside of motor connecting to terminals 3 and 4. Swap Black and Green wires at terminals 3 and 4 to reverse.](/images/jointer-wiring.png)
+
+## Tool Owner
+
+- Josef

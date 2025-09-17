@@ -71,3 +71,7 @@ Refer to the test cut pieces near the laser area for power settings. Generally, 
 ## Example files
 
 OMTech provides a [Material Test Card Lightburn file](https://omtechlaser.com/pages/downloads) which can be used to run a test cut on your material.
+
+## Tool Owner
+
+- Gabe and Brad equally

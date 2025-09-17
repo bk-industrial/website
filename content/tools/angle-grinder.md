@@ -29,3 +29,8 @@ Angle grinders are versatile tools that are also extremely dangerous. This grind
 - When using an abrasive cut-off disc, score the line of the cut you want to make lightly first. Make gradually deeper light passes. Repeated shallow cuts will provide better results.
 - Never place pressure on the flat sides or transverse to the edge of an abrasive cut-off wheel. It can shatter and send debris at high velocity. Use a flap disc or wire brush wheel instead.
 - When using a wire-wheel, ensure that you and anyone nearby has eye, face, and skin protection. The wires tend to fly off the wheel and embed themselves in anything soft nearby. You may not even notice that you have a wires in your arm, so be careful and use low RPMs.
+
+## Tool Owners
+
+- Makita Cordless: Josef
+- Ryobi Corded: Jesse
