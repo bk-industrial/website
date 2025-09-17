@@ -33,15 +33,20 @@ See the [Shop Rules](/operations/shop-rules) for information on tool maintenance
 
 ### Training Matrix
 
-| User  | Bandsaw | Chopsaw | CNC | Drill Press | Jointer | Laser | Metal Lathe | Mill  | Tablesaw | Wood Lathe |
-| ----- | ------- | ------- | --- | ----------- | ------- | ----- | ----------- | ----- | -------- | ---------- |
-| Brad  |         |         |     |             |         | Owner |             |       | x        |            |
-| Gabe  |         |         |     |             |         | Owner |             | Owner | x        |            |
-| James | x       |         | x   |             |         |       |             |       | x        | Owner      |
-| Jesse |         |         | x   |             |         |       |             | Owner |          |            |
-| Josef | Owner   | x       | x   | x           | Owner   |       | Owner       | Owner | x        | x          |
-| Joss  | x       | x       | x   |             | x       | x     |             |       | x        |            |
-| Mats  |         |         |     |             |         |       |             |       |          |            |
-| Otis  |         | x       | x   | x           |         | x     |             |       | x        |            |
-| Ryan  |         | x       |     |             |         |       |             |       | x        | x          |
-| Zaq   |         | x       | x   |             |         |       |             |       | Owner    |            |
+| User   | Bandsaw | Chopsaw | CNC  | Drill Press | Jointer | Laser | Metal Lathe | Mill  | Tablesaw | Wood Lathe |
+| ------ | ------- | ------- | ---- | ----------- | ------- | ----- | ----------- | ----- | -------- | ---------- |
+| Andrew | Done    | Done    |      |             | Done    |       |             |       | Done     |            |
+| Anna   | Done    | Done    |      |             |         |       |             |       | Done     |            |
+| Brad   |         |         |      |             |         | Owner |             |       | Done     |            |
+| Gabe   |         |         |      |             |         | Owner |             | Owner | Done     |            |
+| Jack   |         |         |      |             |         | Done  |             |       |          |            |
+| James  | Done    |         | Done |             |         |       |             |       | Done     | Owner      |
+| Jesse  |         |         | Done |             |         |       |             | Owner |          |            |
+| John   |         |         |      |             |         |       |             |       |          |            |
+| Josef  | Owner   | Done    | Done | Done        | Owner   |       | Owner       | Owner | Done     | Done       |
+| Joss   | Done    | Done    | Done |             | Done    | Done  |             |       | Done     |            |
+| Laure  | Done    | Done    |      |             | Done    |       |             |       | Done     |            |
+| Mats   |         |         |      |             |         |       |             |       |          |            |
+| Otis   |         | Done    | Done | Done        |         | Done  |             |       | Done     |            |
+| Ryan   |         | Done    |      |             |         |       |             |       | Done     | Done       |
+| Zaq    |         | Done    | Done |             |         |       |             |       | Owner    |            |
