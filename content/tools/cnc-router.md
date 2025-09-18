@@ -121,4 +121,6 @@ X and Y are usually set to zero at some position near the front left corner of t
 3. Using the Probe widget in CNCjs, set the touch plate thickness (15mm), check for clashes, and run the probe program.
 4. The machine will lower the spindle along Z slowly, stopping when continuity is detected between the spindle and the touch plate, then backing off 4mm (default). Z -zero will be set at the bottom of the touch plate, assuming you've entered the proper thickness.
 
----
+## Tool Owner
+
+- Rohan Singh

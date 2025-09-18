@@ -1,5 +1,7 @@
 # Table Saw - Jet Hybrid
 
+Model JT PS10TS
+
 ## ⚠️ Safety
 
 - Use all guards applicable for the operation.
@@ -19,7 +21,8 @@
 
 ## Dust Collection
 
-Turn on the dust collector before using the saw. It is located behind the outfeed table. Do not use this dust collector for other purposes.
+The dust collection should come on automatically when the saw is turned on. It is located behind the outfeed table. Do not use this dust collector for other purposes.
+The controller is on the shelf below the outfeed tables, and can be turned to On, Auto, or Off. Return it to 'auto' after use.
 
 ## Operations
 
@@ -65,3 +68,7 @@ The general purpose blade installed in the saw is:
 Sawblade sharpening is available from:
 - [Burns Tools](https://www.burnstools.com/blade-sharpening/form)
 - [CT Saw](https://ctsaw.com/sharpening-service/)
+
+## Tool Owner
+
+- Zaq

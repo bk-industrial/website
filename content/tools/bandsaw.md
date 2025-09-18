@@ -61,3 +61,7 @@
 - Use the proper blade for the operation.
 - When sawing aluminum, make sure there are at least two teeth in the material; i.e. for ½” aluminum plate, use a blade with at least 4 TPI. More teeth, more better the cut.
 - Don’t trust the saw to cut parallel to the fence unless you set it up to do so (following the instructions above usually does the trick). If you’re making a quick cut and don’t want to go through the setup, just cut to a line rather than using the fence.
+
+## Tool Owner
+
+- Josef
