@@ -2,11 +2,12 @@
 
 ## Clean up your shit
 
+- [ ] **Return tools to the state you found them.** Replace all guards, safety devices, etc. which you may have removed for nefarious purposes.
+- [ ] **Wash any dishes you dirtied.**
 - [ ] Take your personal tools out of the shop.
 - [ ] Projects left in the shop should be put in neat order so that they don't impede others, and notify the group as appropriate.
-- [ ] Replace all guards, safety devices, etc. which you may have removed for nefarious purposes.
 - [ ] Sweep the floor. 
-- [ ] Wash any dishes you dirtied.
+
 
 ## Last to leave
 
