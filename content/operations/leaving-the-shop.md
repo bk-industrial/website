@@ -3,7 +3,7 @@
 ## Clean up your shit
 
 - [ ] Notify the chat of projects in the shop or anything that needs attention.
-- [ ] Put away all tools in the shop and return tools to the state you found them.
+- [ ] Put away all tools in the shop and return tools to their proper/default configuration.
 - [ ] Tidy up projects left in the shop.
 - [ ] Sweep the floor. 
 - [ ] Wash all dishes.
