@@ -38,6 +38,8 @@ See the [Shop Rules](/operations/shop-rules) for information on tool maintenance
 | Andrew | Done    | Done    |      |             | Done    |       |             |       | Done     |            |
 | Anna   | Done    | Done    |      |             |         |       |             |       | Done     |            |
 | Brad   |         |         |      |             |         | Owner |             |       | Done     |            |
+| Benton | Done    | Done    |      | Done        | Done    |       |             |       | Done     |            |
+| Elais  | Done    | Done    |      | Done        | Done    |       |             |       | Done     |            |
 | Gabe   |         |         |      |             |         | Owner |             | Owner | Done     |            |
 | Jack   |         |         |      |             |         | Done  |             |       |          |            |
 | James  | Done    |         | Done |             |         |       |             |       | Done     | Owner      |
@@ -46,7 +48,8 @@ See the [Shop Rules](/operations/shop-rules) for information on tool maintenance
 | Josef  | Owner   | Done    | Done | Done        | Owner   |       | Owner       | Owner | Done     | Done       |
 | Joss   | Done    | Done    | Done |             | Done    | Done  |             |       | Done     |            |
 | Laure  | Done    | Done    |      |             | Done    |       |             |       | Done     |            |
-| Mats   |         |         |      |             |         |       |             |       |          |            |
+| Mats   | Done    | Done    |      | Done        | Done    | Done  |             |       | Done     |            |
+| Max    | Done    | Done    |      | Done        | Done    |       |             |       | Done     |            |
 | Otis   |         | Done    | Done | Done        |         | Done  |             |       | Done     |            |
 | Ryan   |         | Done    |      |             |         |       |             |       | Done     | Done       |
 | Zaq    |         | Done    | Done |             |         |       |             |       | Owner    |            |
