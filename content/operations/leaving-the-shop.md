@@ -2,18 +2,17 @@
 
 ## Clean up your shit
 
-- [ ] Take your personal tools out of the shop.
-- [ ] Projects left in the shop should be put in neat order so that they don't impede others, and notify the group as appropriate.
-- [ ] Replace all guards, safety devices, etc. which you may have removed for nefarious purposes.
+- [ ] Notify the chat of projects in the shop or anything that needs attention.
+- [ ] Put away all tools in the shop
+- [ ] Tidy up projects left in the shop.
 - [ ] Sweep the floor. 
-- [ ] Wash any dishes you dirtied.
+- [ ] Wash all dishes.
+- [ ] Take a bag of garbage.
 
 ## Last to leave
 
 - [ ] Close all the windows, turn off fans and AC.
 - [ ] Turn off tools and dust collectors.
-- [ ] Turn off all CNC tools.
-- [ ] Hotwork tools have been off for at least 30 minutes (and nothing is on fire).
-- [ ] Lights off in the shop, last grid, and main area.
-- [ ] Check the garbage - empty them if full.
+- [ ] 30 minute fire watch if hotwork tools were used. 
+- [ ] Lights off (all four banks).
 - [ ] Door locked.
