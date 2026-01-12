@@ -47,6 +47,7 @@ See the [Shop Rules](/operations/shop-rules) for information on tool maintenance
 
 | User   | Bandsaw | Chopsaw | CNC  | Drill Press | Jointer | Laser | Metal Lathe | Mill  | Tablesaw | Wood Lathe |
 | ------ | ------- | ------- | ---- | ----------- | ------- | ----- | ----------- | ----- | -------- | ---------- |
+| Alice  | Done    | Done    |      |             | Done    |       |             |       | Done     |            |
 | Andrew | Done    | Done    |      |             | Done    |       |             |       | Done     |            |
 | Anna   | Done    | Done    |      |             |         |       |             |       | Done     |            |
 | Brad   |         |         |      |             |         | Owner |             |       | Done     |            |
@@ -58,10 +59,11 @@ See the [Shop Rules](/operations/shop-rules) for information on tool maintenance
 | Jesse  |         |         | Done |             |         |       |             | Owner |          |            |
 | John   |         |         |      |             |         |       |             |       |          |            |
 | Josef  | Owner   | Done    | Done | Done        | Owner   |       | Owner       | Owner | Done     | Done       |
-| Joss   | Done    | Done    | Done |             | Done    | Done  |             |       | Done     |            |
 | Laure  | Done    | Done    |      |             | Done    |       |             |       | Done     |            |
 | Mats   | Done    | Done    |      | Done        | Done    | Done  |             |       | Done     |            |
 | Max    | Done    | Done    |      | Done        | Done    |       |             |       | Done     |            |
 | Otis   |         | Done    | Done | Done        |         | Done  |             |       | Done     |            |
+| Qian   | Done    | Done    | Done |             | Done    | Done  |             |       | Done     |            |
 | Ryan   |         | Done    |      |             |         |       |             |       | Done     | Done       |
+| Scott  | Done    | Done    |      | Done        | Done    |       |             |       | Done     |            |
 | Zaq    |         | Done    | Done |             |         |       |             |       | Owner    |            |
