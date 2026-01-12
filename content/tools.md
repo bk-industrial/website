@@ -8,8 +8,10 @@ See the [Shop Rules](/operations/shop-rules) for information on tool maintenance
 
 ## Tier 1
 
-- Shop Vac
+- Shop Vac (Zaq)
 - [Air Cleaner](air-cleaner)
+- Dust Collector 
+- Air Conditioner (Zaq)
 
 ## Tier 2
 
@@ -17,6 +19,16 @@ See the [Shop Rules](/operations/shop-rules) for information on tool maintenance
 - [Hand Tool Bench](hand-tool-bench)
 - [6" Pedestal Grinder](pedestal-grinder)
 - [Dewalt 13" Thickness Planer](thickness-planer)
+- Makita Track Saw and 2x 55" tracks (Zaq)
+- Makita Track Saw, 2x 55" tracks, 2x 24" tracks (Jesse)
+- Porter Cable Router (Zaq)
+- Dewalt Jigsaw (Zaq)
+- Makita Oscillating multitool (Zaq)
+- Makita Reciprocating Saw (Zaq)
+- Pancake Compressor (Zaq)
+- Brad Nailer (Zaq)
+- Framing Nailer (Zaq)
+- Narrow Crown Stapler (Zaq)
 
 ## Tier 3
 
