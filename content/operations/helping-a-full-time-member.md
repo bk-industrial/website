@@ -1,3 +1,8 @@
++++
+title = "Bringing Helpers to the Shop - Brooklyn Industrial Arts"
+description = "Guidelines for full-time members bringing project helpers to Brooklyn Industrial Arts. Responsibilities, insurance, and checklist for temporary shop access."
++++
+
 ## Helping a Full-Time Shop Member
 
 Occassionally, full-time shop members may need assistance on larger projects that span multiple sessions or weeks.

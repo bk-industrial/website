@@ -1,3 +1,8 @@
++++
+title = "6-Inch Pedestal Grinder - Brooklyn Industrial Arts"
+description = "6-inch pedestal grinder safety, usage information, and wheel dressing guide at Brooklyn Industrial Arts shared workshop."
++++
+
 # 6" Pedestal Grinder
 
 ## ⚠️ Safety:

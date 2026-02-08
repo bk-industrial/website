@@ -1,3 +1,8 @@
++++
+title = "Sublease Agreement - Brooklyn Industrial Arts"
+description = "Standard sublease agreement template for Brooklyn Industrial Arts workshop space at 544 Park Ave, Suite 332, Brooklyn NY."
++++
+
 # SUBLEASE AGREEMENT
 
 This Sublease Agreement (the "Agreement") is made on _____________ between G. Ochoa LLC ("Sublessor") and ________________________ ("Sublessee").

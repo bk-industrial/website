@@ -1,4 +1,9 @@
-# Planer - [Dewalt DW735 13” Planer](https://www.dewalt.com/product/dw735/13-three-knife-two-speed-thickness-planer)
++++
+title = "Dewalt DW735 13-Inch Thickness Planer - Brooklyn Industrial Arts"
+description = "Dewalt DW735 13-inch thickness planer safety, assembly, dust collection, and usage guide at Brooklyn Industrial Arts shared workshop."
++++
+
+# Planer - [Dewalt DW735 13" Planer](https://www.dewalt.com/product/dw735/13-three-knife-two-speed-thickness-planer)
 
 ![Dewalt 13" Planer](/images/dewalt-planer-1.JPG)
 

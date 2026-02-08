@@ -17,9 +17,13 @@ enableRobotsTXT = true
 disableKinds = ["taxonomy"]
 ignoreErrors = ["error-disable-taxonomy"]
 
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+
 [params]
 # The "description" of your website. This is used in the meta data of your generated html.
-description = "A shared workshop in Brooklyn, perfect for individuals and small teams making physical prototypes, consumer electronics, wood projects."
+description = "Brooklyn Industrial Arts is a shared workshop and makerspace in North Brooklyn, NYC. 24/7 access to CNC routers, laser cutters, woodworking and metalworking tools for makers, designers, and engineers."
 
 # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
 # Hint: It's good practise to also put a "favicon.ico"-file into your "static"-folder.

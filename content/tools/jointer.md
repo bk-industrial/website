@@ -1,3 +1,8 @@
++++
+title = "Wadkin Bursgreen 9-1/4 Inch Jointer - Brooklyn Industrial Arts"
+description = "Wadkin Bursgreen 9-1/4 inch jointer for face and edge jointing. Safety rules, assembly, usage guide, and maintenance at Brooklyn Industrial Arts workshop."
++++
+
 # Jointer - [Wadkin Bursgreen 9-1/4"](https://www.wadkin.com/archive%20pdfs/Wadkin%20BFT%209%20inch%20Planer%20Manual%20Parts%20List.pdf)
 
 ![Wadkin Bursgreen 9BFT Jointer](/images/wadkin-jointer.JPG)

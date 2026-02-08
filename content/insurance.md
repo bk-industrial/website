@@ -1,3 +1,8 @@
++++
+title = "Insurance FAQ - Brooklyn Industrial Arts"
+description = "Insurance requirements and FAQ for Brooklyn Industrial Arts members. Learn about general liability coverage, costs, and recommended insurance providers for makerspace tenants."
++++
+
 # Insurance FAQ
 
 So you’ve decided to join Brooklyn Industrial Arts! Great! Brooklyn Industrial Arts requires all tenants and people who will be in the space to have general liability insurance for their entity. We’ve prepared some general information and FAQ to help guide you through obtaining insurance.

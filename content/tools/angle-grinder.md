@@ -1,3 +1,8 @@
++++
+title = "Angle Grinders - Brooklyn Industrial Arts"
+description = "4-1/2 inch angle grinder safety guidelines, assembly, and usage information at Brooklyn Industrial Arts shared workshop in North Brooklyn."
++++
+
 # Angle Grinder
 
 Angle grinders are versatile tools that are also extremely dangerous. This grinder can take 4 1/2” diameter discs of different types and spins them at very high RPM. Discs you can use include abrasive cut-off wheels, flap discs (course sandpaper), and other more technical heads such as wood power carvers, wire wheels, and more..
