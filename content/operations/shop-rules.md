@@ -1,3 +1,8 @@
++++
+title = "Shop Rules"
+description = "Workshop rules covering tool use, maintenance, dust collection, project storage, and waste management at Brooklyn Industrial Arts makerspace."
++++
+
 # Shop Rules
 
 For the purposes of this document, the shop is the common space by the window, separated by the meat locker curtains.

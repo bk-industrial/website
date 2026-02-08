@@ -1,3 +1,8 @@
++++
+title = "Ulmia Woodworking Bench"
+description = "Ulmia hand tool woodworking bench with face vise, tail vise, and bench dogs. Safety, assembly, and usage information at Brooklyn Industrial Arts."
++++
+
 # Ulmia Woodworking Bench
 
 ![Ulmia Woodworking Bench](/images/ulmia-bench.JPG)

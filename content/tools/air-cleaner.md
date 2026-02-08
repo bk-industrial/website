@@ -1,3 +1,8 @@
++++
+title = "Air Cleaners and Filtration"
+description = "WEN and JET air cleaners for workshop dust filtration at Brooklyn Industrial Arts. Ownership, replacement filters, and maintenance information."
++++
+
 # Air Cleaners
 
 ## WEN 10x17 Air Cleaners

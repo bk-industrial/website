@@ -1,3 +1,8 @@
++++
+title = "Tools & Equipment"
+description = "Browse our full inventory of shared workshop tools including a laser cutter, CNC router, table saw, bandsaw, jointer, metal lathe, milling machine, and more at Brooklyn Industrial Arts."
++++
+
 # Tools
 
 ---

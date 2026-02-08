@@ -1,3 +1,8 @@
++++
+title = "Jet Hybrid Table Saw"
+description = "Jet Hybrid table saw safety guidelines, blade change procedures, dust collection, ripping and crosscutting operations at Brooklyn Industrial Arts workshop."
++++
+
 # Table Saw - Jet Hybrid
 
 Model JT PS10TS
