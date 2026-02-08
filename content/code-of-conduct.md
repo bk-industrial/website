@@ -1,5 +1,5 @@
 +++
-title = "Code of Conduct - Brooklyn Industrial Arts"
+title = "Code of Conduct"
 description = "Brooklyn Industrial Arts community code of conduct. We are committed to providing a friendly, safe, and welcoming environment for all members of our shared workshop."
 +++
 

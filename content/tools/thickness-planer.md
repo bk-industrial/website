@@ -1,5 +1,5 @@
 +++
-title = "Dewalt DW735 13-Inch Thickness Planer - Brooklyn Industrial Arts"
+title = "Dewalt DW735 13-Inch Thickness Planer"
 description = "Dewalt DW735 13-inch thickness planer safety, assembly, dust collection, and usage guide at Brooklyn Industrial Arts shared workshop."
 +++
 

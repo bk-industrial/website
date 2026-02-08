@@ -1,5 +1,5 @@
 +++
-title = "Sublease Agreement - Brooklyn Industrial Arts"
+title = "Sublease Agreement"
 description = "Standard sublease agreement template for Brooklyn Industrial Arts workshop space at 544 Park Ave, Suite 332, Brooklyn NY."
 +++
 

@@ -1,5 +1,5 @@
 +++
-title = "6-Inch Pedestal Grinder - Brooklyn Industrial Arts"
+title = "6-Inch Pedestal Grinder"
 description = "6-inch pedestal grinder safety, usage information, and wheel dressing guide at Brooklyn Industrial Arts shared workshop."
 +++
 

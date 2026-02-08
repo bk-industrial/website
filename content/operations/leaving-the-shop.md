@@ -1,5 +1,5 @@
 +++
-title = "Leaving the Shop Checklist - Brooklyn Industrial Arts"
+title = "Leaving the Shop Checklist"
 description = "Cleanup and closing procedures checklist for Brooklyn Industrial Arts members. Steps for tidying up and securing the workshop when leaving."
 +++
 

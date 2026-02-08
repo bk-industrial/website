@@ -1,5 +1,5 @@
 +++
-title = "Bylaws - Brooklyn Industrial Arts Cooperative"
+title = "Bylaws"
 description = "Brooklyn Industrial Arts proto-cooperative bylaws covering membership, governance, voting procedures, and board responsibilities for our shared workshop community."
 +++
 

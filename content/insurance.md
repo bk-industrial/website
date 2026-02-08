@@ -1,5 +1,5 @@
 +++
-title = "Insurance FAQ - Brooklyn Industrial Arts"
+title = "Insurance FAQ"
 description = "Insurance requirements and FAQ for Brooklyn Industrial Arts members. Learn about general liability coverage, costs, and recommended insurance providers for makerspace tenants."
 +++
 

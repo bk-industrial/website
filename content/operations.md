@@ -1,5 +1,5 @@
 +++
-title = "Operations & Policies - Brooklyn Industrial Arts"
+title = "Operations & Policies"
 description = "Shop rules, bylaws, code of conduct, insurance requirements, and operational guidelines for members of Brooklyn Industrial Arts makerspace."
 menu = "main"
 +++

@@ -1,5 +1,5 @@
 +++
-title = "Bringing Helpers to the Shop - Brooklyn Industrial Arts"
+title = "Bringing Helpers to the Shop"
 description = "Guidelines for full-time members bringing project helpers to Brooklyn Industrial Arts. Responsibilities, insurance, and checklist for temporary shop access."
 +++
 

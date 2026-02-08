@@ -1,5 +1,5 @@
 +++
-title = "OMTech 100W CO2 Laser Cutter - Brooklyn Industrial Arts"
+title = "OMTech 100W CO2 Laser Cutter"
 description = "OMTech AF2440-100 laser cutter with 24x40 inch work area. Safety guidelines, operation instructions, approved materials, and software setup at Brooklyn Industrial Arts."
 +++
 

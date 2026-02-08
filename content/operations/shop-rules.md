@@ -1,5 +1,5 @@
 +++
-title = "Shop Rules - Brooklyn Industrial Arts"
+title = "Shop Rules"
 description = "Workshop rules covering tool use, maintenance, dust collection, project storage, and waste management at Brooklyn Industrial Arts makerspace."
 +++
 

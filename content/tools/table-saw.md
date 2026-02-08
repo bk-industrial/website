@@ -1,5 +1,5 @@
 +++
-title = "Jet Hybrid Table Saw - Brooklyn Industrial Arts"
+title = "Jet Hybrid Table Saw"
 description = "Jet Hybrid table saw safety guidelines, blade change procedures, dust collection, ripping and crosscutting operations at Brooklyn Industrial Arts workshop."
 +++
 

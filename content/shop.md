@@ -1,5 +1,5 @@
 +++
-title = "Shop & Facilities - Brooklyn Industrial Arts"
+title = "Shop & Facilities"
 description = "Explore our 2,000 sq ft shared workshop in North Brooklyn with 3-phase power, freight elevator, loading dock, and a full range of woodworking and metalworking tools. 24/7 access for members."
 menu = "main"
 +++

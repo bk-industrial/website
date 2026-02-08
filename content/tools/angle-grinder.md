@@ -1,5 +1,5 @@
 +++
-title = "Angle Grinders - Brooklyn Industrial Arts"
+title = "Angle Grinders"
 description = "4-1/2 inch angle grinder safety guidelines, assembly, and usage information at Brooklyn Industrial Arts shared workshop in North Brooklyn."
 +++
 

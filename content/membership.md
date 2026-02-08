@@ -1,5 +1,5 @@
 +++
-title = "Membership - Brooklyn Industrial Arts"
+title = "Membership"
 description = "Join Brooklyn Industrial Arts with full-time or tool-access membership options. 24/7 workshop access, dedicated workbenches, and shared tools in North Brooklyn starting at $300/month."
 menu = "main"
 +++

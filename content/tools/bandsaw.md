@@ -1,5 +1,5 @@
 +++
-title = "Delta 14-Inch Bandsaw - Brooklyn Industrial Arts"
+title = "Delta 14-Inch Bandsaw"
 description = "Delta 14-inch bandsaw safety, blade changing, table adjustment, and usage guide. Configured for wood and plastic cutting at Brooklyn Industrial Arts workshop."
 +++
 

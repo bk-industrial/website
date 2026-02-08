@@ -1,5 +1,5 @@
 +++
-title = "Wadkin Bursgreen 9-1/4 Inch Jointer - Brooklyn Industrial Arts"
+title = "Wadkin Bursgreen 9-1/4 Inch Jointer"
 description = "Wadkin Bursgreen 9-1/4 inch jointer for face and edge jointing. Safety rules, assembly, usage guide, and maintenance at Brooklyn Industrial Arts workshop."
 +++
 

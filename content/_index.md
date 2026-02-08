@@ -1,5 +1,5 @@
 +++
-title = "Brooklyn Industrial Arts - Shared Workshop & Makerspace in Brooklyn, NYC"
+title = "Brooklyn Industrial Arts"
 description = "Brooklyn Industrial Arts is a shared workshop and makerspace in North Brooklyn offering 24/7 access to CNC routers, laser cutters, woodworking tools, and more. Join our community of makers, designers, and engineers."
 +++
 
