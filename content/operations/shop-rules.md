@@ -5,11 +5,11 @@ description = "Workshop rules covering tool use, maintenance, dust collection, p
 
 # Shop Rules
 
-For the purposes of this document, the shop is the common space by the window, separated by the meat locker curtains.
+For the purposes of this document, the shop is Suite 338, including the wood shop and metal shop
 
 ## Tool Use
 
-Power tools in the shop are available for any authorized person to use. 
+With the exception of private toolboxes, tools in the shop are available for any authorized person to use. 
 Do not leave your own tools in the workshop if you would be mad if someone else used them.
 Do not modify, reconfigure, or repair tools, jigs, or fixtures that do not belong to you. 
 Tools are not common property of the shop, but personal property of one or more members. 
@@ -33,6 +33,7 @@ If there is a safety concern, lock out the tool (unplug and tape a sign over the
 The shop manager is responsible for monitoring the consumables and condition of tools in the shop, and will replace consumables at their discretion from the shop budget (pursuant to the rules in the operating agreement). If problems are found with a tool, the shop manager will ask the tool owner before taking repair actions, and may lock out the tool until it has been repaired. 
 
 ### Clamps
+
 Clamps must be returned to the clamp rack after use.
 Rack clamps fully extended; like with like, short clamps in front of long clamps. 
 
@@ -42,17 +43,30 @@ All stationary tools must be used with appropriate dust collection.
 Check frequently for jams, blockages, and full bags.
 Use dust collection on handheld power tools whenever possible
 
+## Private Toolboxes
+
+Members are allowed a private toolbox in the shop, against the walls near the handwork area, subject to space availability. This can be anything from a floorstanding mechanic's drawer chest (a small one) to a toolbag on the shelf, but it must be well contained and clearly marked "{Your Name} Private".
+
+Do not take, borrow, use, or look lustfully at private tools without explicit permission from the owner. If you have permission from the owner, it is expected that you will take extra care with borrowed tools and return them in good condition immediately after use.
+
 ## Projects Left in the Shop
 
 Users should take care to leave the shop in a clean and orderly state. 
-If you must leave a project in the shop, communicate this via appropriate channels so that others can continue to use the shop, and so that if others need to move your project, they can do so safely. 
+
+Parts and pieces in progress may be stored on the parts rack. Mark your pieces with your name and the date. The parts rack is not for long term storage - older items will be removed if space is exhausted.
+
+If you must leave a project on the floor or on a work surface, communicate this via appropriate channels so that others can continue to use the shop, and so that if others need to move your project, they can do so safely. 
 
 The appropriate channels are as follows:
 - Post to Signal for immediate and temporary conditions, such as a glue-up or paint job. Tell us when it will be safe to move, even if you'll be in to move it soon.
-- Create a calendar event for ongoing occupations. If you've got a rush job and need to destroy the shop for a weekend, other people can see the event and coordinate with you.
+- Create a calendar event for prolonged occupations. If you've got a rush job and need to destroy the shop for a weekend, other people can see the event and coordinate with you.
 
 Projects left in the shop should be treated with care and respect. 
 Before moving a project, check the channels above for instructions or contact the owner.
+
+## Food and Drink
+
+Food and drink (excepting water) are not allowed in Ste 338. Alcohol poses a safety hazard around sharp tools, cans covered in condensate cause corrosion of cast-iron surfaces, and food attracts rodents to a room with an abundance of hiding spots.
 
 ## Trash and Scrap
 
@@ -67,7 +81,7 @@ We maintain the following waste streams:
 - Place all small, clean wood scrap in the left bin under the tablesaw
 - Wood scraps which are longer than the bin should be cut into smaller pieces, or if they are of value, placed in the vertical stock storage.
 
-Each month, the bin and drum will be sorted for better quality scraps. 
+Each month, the bin will be sorted for better quality scraps. 
 Those which do not make the cut will be sent to a farm upstate where they can run free (in a fire).
 
 ### Composite Scraps
@@ -75,8 +89,7 @@ Those which do not make the cut will be sent to a farm upstate where they can ru
 Composites include plywood, MDF, plastic, etc.; 
 anything you wouldn't burn or recycle.
 
-- Place all small, clean composite scrap in the right bin under the table saw. 
-- Longer scraps go in the 55 gallon drum.
+- Place all small, clean composite scrap in the right bin under the table saw.
 - Composite scraps which are longer than the drum should be cut into smaller pieces, or if they are of value, placed in the vertical stock storage.
 
 Each month, the bin and drum will be sorted for better quality scraps. 
@@ -84,18 +97,22 @@ Those which do not make the cut will be sent to the landfill.
 
 ### Garbage
 
-Garbage should be placed in black or brown garbage cans, located in the shop or kitchen.
-Food waste should be placed in the red ~~fireproof~~ mouseproof cans.
+Garbage (including low-value scrap wood) should be placed in black or brown garbage cans.
+Food is not allowed in the woodshop - food waste should be disposed of in Ste 332 in the red step-cans
 
-Please take out garbage whenever it is full.
+When full, take garbage bags to the dumpsters in the first bay of the loading dock.
 
 ### Cardboard Recycling
 
-All cardboard must be flattened and placed under the kitchen table. Paper, unfortunately, must go in the garbage.
+All cardboard must be flattened and stuffed in the grey 55 gallon trash can in Ste 332. Paper, unfortunately, must go in the garbage.
+
+When full, take the cardboard to the last bay of the loading dock.
 
 ### Aluminum Recycling
 
-Aluminum cans go in the blue bin in the kitchen. When full, Gabe takes these home and leaves them for the can collectors.
+Aluminum cans go in the blue bin in the kitchen. 
+
+When full, take home and leave them for the can collectors or municipal recycling.
 
 ## Wood Finishes, Paint, Glue, Etc
 

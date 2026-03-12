@@ -18,6 +18,8 @@ description = "Cleanup and closing procedures checklist for Brooklyn Industrial 
 
 - [ ] Close all the windows, turn off fans and AC.
 - [ ] Turn off tools and dust collectors.
+- [ ] Unplug compressor and drain.
 - [ ] 30 minute fire watch if hotwork tools were used. 
-- [ ] Lights off (all four banks).
+- [ ] Lights off.
 - [ ] Door locked.
+- [ ] Check Ste 332 and Ste 338.
