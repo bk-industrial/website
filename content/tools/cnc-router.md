@@ -1,3 +1,8 @@
++++
+title = "X-Carve CNC Router"
+description = "X-Carve CNC router with 750x750x100mm work envelope. Safety procedures, setup guide, CAM information, speeds and feeds, and workholding strategies at Brooklyn Industrial Arts."
++++
+
 # The CNC Router
 
 ## [X-Carve](https://shop.inventables.com/products/x-carve-1)

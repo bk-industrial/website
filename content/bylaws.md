@@ -1,3 +1,8 @@
++++
+title = "Bylaws"
+description = "Brooklyn Industrial Arts proto-cooperative bylaws covering membership, governance, voting procedures, and board responsibilities for our shared workshop community."
++++
+
 # Brooklyn Industrial Arts Proto-Cooperative Bylaws
 
 Real co-op bylaws have to satisfy some legal conditions, these are merely an agreement between shopmates.

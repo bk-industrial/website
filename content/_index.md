@@ -1,5 +1,6 @@
 +++
 title = "Brooklyn Industrial Arts"
+description = "Brooklyn Industrial Arts is a shared workshop and makerspace in North Brooklyn offering 24/7 access to CNC routers, laser cutters, woodworking tools, and more. Join our community of makers, designers, and engineers."
 +++
 
 If you're working on physical projects in NYC, you know how hard it is to find an affordable, convenient workshop. Brooklyn Industrial Arts is organized to be flexible, offering just the right amenities for you to build your business and sustain hobby time in a friendly, supportive environment.
@@ -10,6 +11,8 @@ Brooklyn Industrial Arts also hosts a range of in-person events, including hardw
 
 We're located in north Brooklyn at 544 Park Ave, Suite 332, Brooklyn NY 11205. 
 
+Check out our [membership options](/membership), browse the [shop and facilities](/shop), or see our [full list of tools and equipment](/tools).
+
 Interested? [Send us an email](mailto:info@bkindustrial.art) to schedule a tour or learn more!
 
-![](/images/IMG_5145.jpeg)
+![Brooklyn Industrial Arts shared workshop space with workbenches and tools](/images/IMG_5145.jpeg)

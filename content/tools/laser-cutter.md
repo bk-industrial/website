@@ -1,3 +1,8 @@
++++
+title = "OMTech 100W CO2 Laser Cutter"
+description = "OMTech AF2440-100 laser cutter with 24x40 inch work area. Safety guidelines, operation instructions, approved materials, and software setup at Brooklyn Industrial Arts."
++++
+
 # OMTech Laser Cutter
 
 The shop has a laser cutting and engraving machine. The model is: [AF2440-100 - 100W CO2 Laser Engraver Cutting Machine with 24" x 40" Working Area and Auto Focus](https://omtechlaser.com/products/100w-co2-laser-engraver-cutter-usb-1060-us?_pos=1&_sid=e33f81ce7&_ss=r)
