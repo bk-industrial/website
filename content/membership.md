@@ -19,10 +19,10 @@ Interested? [Let us know how you want to use the shop!](https://docs.google.com/
 
 Brooklyn Industrial Arts offers 2 membership options at the moment:
 
-| Type                   | Workspace                                | Access                                      | Price                         |
-| ---------------------- | :--------------------------------------- | :------------------------------------------ | :---------------------------- |
-| Full Voting Membership | Bring your own workbench + common tables | 24/7  access + space for large project work | Split % of Rent and Shop fees |
-| Full access to tools   | common tables and space                  | 24/7  access                                | $300/month                    |
+| Type                   | Workspace                                | Storage                                                                            | Access                                      | Price                         |
+| ---------------------- | :--------------------------------------- | :--------------------------------------------------------------------------------- | :------------------------------------------ | :---------------------------- |
+| Full Voting Membership | Bring your own workbench + common tables | Long-term project and communal storage                                             | 24/7  access + space for large project work | Split % of Rent and Shop fees |
+| Flex access   | common tables and space                  | Limited active-project and tool storage, removed when membership is paused | 24/7  access                                | $300/month                    |
 
 Full membership is a percentage of the operating costs given the number of people in the shop at the time. Currently, this works out to ~700-$800/mo. We share the cost of the commercial lease for the space which is currently about $5500/mo. Member includes access to the space and storage for tools and supplies, enabling long-term projects to develop freely.
 
