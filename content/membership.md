@@ -10,6 +10,8 @@ menu = "main"
 
 Brooklyn Industrial Arts is a shop, collective, and a place for people to make physical projects come to life. We do share resources and spend a lot of time observing and helping out with each others’ projects, but the shop itself is set up such that each Member has their own dedicated workbench/desk.
 
+> **We are currently at full capacity** for both full-time and flex memberships. To be notified when space opens up, please **[sign up for our mailing list](#mailing-list)** at the bottom of this page.
+
 Interested? [Let us know how you want to use the shop!](https://docs.google.com/forms/d/e/1FAIpQLSfuNXVlvfGhaNH_uV8uBMtWSCDZVuUFS4AMfYnVAnCtPwQzGQ/viewform) or [send us an email](mailto:info@bkindustrial.art) to schedule a tour or learn more.
 
 ---
@@ -39,3 +41,9 @@ It can be hard to find the right insurance for what you plan to work on at Brook
 All memberships come with 24/7 building access.
 
 [Email us to schedule a tour and start building!](mailto:info@bkindustrial.art)
+
+---
+
+## Join the Waitlist {#mailing-list}
+
+We're currently full for both full-time and flex memberships. **Sign up for our mailing list below** and we'll let you know as soon as a spot opens up.
