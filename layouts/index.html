@@ -1,0 +1,18 @@
+{{ define "main" }}
+<section class="hero">
+  <p class="eyebrow">Makerspace · North Brooklyn</p>
+  <h1>A shared workshop for people who build real things.</h1>
+  <p class="lede">
+    Brooklyn Industrial Arts is a member-owned makerspace with 24/7 access to
+    woodworking, metalworking, CNC, and laser tools. Build a business, sustain a
+    hobby, and do it alongside makers, designers, and engineers.
+  </p>
+  <div class="actions">
+    <a class="btn btn--primary" href="{{ "membership" | relURL }}">See membership</a>
+    <a class="btn" href="mailto:info@bkindustrial.art">Book a tour</a>
+  </div>
+</section>
+<content>
+  {{ .Content }}
+</content>
+{{ end }}
