@@ -40,6 +40,8 @@ It can be hard to find the right insurance for what you plan to work on at Brook
 
 All memberships come with 24/7 building access.
 
+**Shop visits are by appointment only.**
+
 [Email us to schedule a tour and start building!](mailto:info@bkindustrial.art)
 
 ---
