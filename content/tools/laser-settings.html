@@ -1,183 +1,583 @@
 +++
-title = "Laser Cutter Settings Lookup"
-description = "Interactive lookup tool for laser cutter engraving and cutting speed/power settings by material and thickness at Brooklyn Industrial Arts."
+title = "Laser Cutter Settings"
+description = "Interactive lookup of cutting, engraving, and marking settings by material and thickness for the OMTech 100W CO2 laser at Brooklyn Industrial Arts, with safety notes and test procedures."
 +++
 
-<h1>Laser Cutter Settings Lookup</h1>
+<h1>Laser Cutter Settings</h1>
 
-<p>Select a material and thickness to see recommended engraving and cutting settings for the shop's laser cutter. These are starting points, not guarantees. Always test on scrap first.</p>
+<p>Starting-point settings for the shop's <a href="/tools/laser-cutter/">OMTech AF2440-100</a> (100W CO2 glass tube, Ruida controller, LightBurn). Speeds are <strong>mm/s</strong>, power is <strong>%</strong>. These are starting points, not guarantees — tube age, alignment, lens condition, and material batch all shift the numbers. <strong>Always test on scrap first</strong> and check the test-cut pieces near the laser.</p>
 
-<div class="laser-lookup">
-  <div class="input-group">
-    <label for="material">Select Material:</label>
-    <select id="material" onchange="updateThicknessOptions()">
-      <option value="">-- Select Material --</option>
-    </select>
-  </div>
-  <div class="input-group">
-    <label for="thickness">Select Thickness:</label>
-    <select id="thickness" onchange="lookupSettings()">
-      <option value="">-- Select Thickness --</option>
-    </select>
-  </div>
-  <div id="result"></div>
+<div class="ls-danger" role="note">
+  <p class="ls-danger-title">⚠️ Never cut these — no exceptions</p>
+  <ul>
+    <li><strong>PVC / vinyl in any form</strong> — sheet PVC, sign vinyl, records, faux leather ("pleather"), vinyl-coated fabric. Releases chlorine gas that injures you and corrodes the machine. No exhaust system makes it safe.</li>
+    <li><strong>Polycarbonate / Lexan</strong> — absorbs the beam, catches fire, soots the optics. Easily confused with acrylic: identify sheet plastic before cutting.</li>
+    <li><strong>ABS</strong> — melts, flares, emits hydrogen cyanide. Includes 3D prints and most plastic project boxes.</li>
+    <li><strong>HDPE / polypropylene sheet</strong> — melts gooey, kerf seals behind the beam, catches fire.</li>
+    <li><strong>Any foam</strong> (styrofoam, foam-core, insulation) — the #1 cause of laser fires.</li>
+    <li><strong>Fiberglass, carbon-fiber panels, epoxy/resin anything</strong> — uncuttable composites, toxic resin fumes.</li>
+    <li><strong>Chrome-tanned or coated leather</strong> — chromium fumes. Veg-tan only (blue/gray flesh side or core = chrome-tan = no).</li>
+    <li><strong>Galvanized, plated, or painted metal</strong> — zinc fumes cause metal fume fever; chrome/cadmium plating and unknown paints release toxic or carcinogenic fumes. Mark bare metal with compound, or anodized aluminum, only.</li>
+    <li><strong>Anything else chlorinated</strong> — neoprene, chlorinated rubber, CPVC, cling film. Unsure whether a rubbery or flexible plastic contains chlorine? It's a no.</li>
+  </ul>
+  <p><strong>Can't positively identify a material? Don't cut it.</strong> No label and no SDS means no. Ask a <a href="/tools/laser-cutter/">tool owner</a>.</p>
 </div>
 
+<div class="ls-machine">
+  <span><strong>Power ceiling</strong> ~70% guideline for cut layers (≈20–22&nbsp;mA; never past 28&nbsp;mA) — entries above it say so</span>
+  <span><strong>Power floor</strong> tube fires unreliably below ~10%</span>
+  <span><strong>Kerf</strong> ~0.15–0.2&nbsp;mm in 3&nbsp;mm stock</span>
+  <span><strong>Focus</strong> surface up to ~5&nbsp;mm; 1/3 into 6&nbsp;mm+ stock</span>
+</div>
+
+<div class="ls-tool">
+  <div class="ls-controls">
+    <div class="ls-field">
+      <label for="ls-material">Material</label>
+      <select id="ls-material"></select>
+    </div>
+    <div class="ls-field">
+      <label for="ls-thickness">Thickness</label>
+      <select id="ls-thickness"></select>
+    </div>
+  </div>
+  <p id="ls-status" class="ls-visually-hidden" aria-live="polite"></p>
+  <div id="ls-result"></div>
+  <noscript><p><strong>This tool needs JavaScript.</strong> The same starting points are posted on the test-cut board next to the laser.</p></noscript>
+</div>
+<noscript><style>.ls-controls, .ls-filter { display: none; }</style></noscript>
+
+<h2>Dialing in a new material</h2>
+<ol>
+  <li>Start from the closest entry here or a test-cut piece near the laser.</li>
+  <li>Run LightBurn's material test grid (<em>Laser Tools → Material Test</em>) on scrap of the exact sheet you'll use. Focus first — an out-of-focus test is invalid.</li>
+  <li>If in doubt: <strong>less power, more passes</strong> — except acrylic, which must cut in one pass (repeat passes remelt the edge).</li>
+  <li>Pick the fastest / lowest-power square that fully cuts through, and save it to your LightBurn material library.</li>
+  <li>Watch the machine the entire time. Acrylic and cardboard can flare; cardboard can hold glowing embers after the job ends.</li>
+</ol>
+
+<h2>Machine practice</h2>
+<ul>
+  <li><strong>Air assist:</strong> high for cutting wood, MDF, leather, and cardboard; <em>low</em> for raster engraving (hard air smears smoke across the work) — except cardboard, where fire control wins: keep air high for everything on corrugated. Low air also for cutting acrylic — that's what gives flame-polished edges. Never cut with air fully off.</li>
+  <li><strong>Min vs Max power (Ruida):</strong> Max Power applies at full speed; Min Power applies at or below the controller's start speed (~10&nbsp;mm/s). For slow thick-material cuts (≤10–15&nbsp;mm/s), set <strong>Min&nbsp;=&nbsp;Max</strong> or the cut won't go through. For normal cuts and engraves, set Min a bit below Max — but not below ~10%, or corners won't fire at all.</li>
+  <li><strong>Thick wood/MDF (beyond ~6&nbsp;mm):</strong> prefer 2–3 moderate passes over one slow scorching pass. <strong>Thick acrylic: never multi-pass at any thickness</strong> — go slower in a single pass. Focus 1/3 into the material for straighter edges on 6&nbsp;mm+.</li>
+  <li><strong>Tube life:</strong> the shop caps cut layers at ~70% power. A healthy, aligned 100W does not need 90% for 6&nbsp;mm wood — needing it means dirty lens, bad focus, weak air assist, or misalignment. Ask before running anything above 70%.</li>
+  <li><strong>Kerf / press-fits:</strong> start with a 0.15&nbsp;mm kerf offset (0.075&nbsp;mm per side) for 3&nbsp;mm ply or acrylic and calibrate with a test cut — kerf varies with lens, focus, and even X vs Y direction.</li>
+</ul>
+
+<h2>Full reference table</h2>
+<p class="ls-legend">
+  <span class="ls-badge ls-badge-shop">shop log</span> tested on this machine ·
+  <span class="ls-badge ls-badge-high">corroborated</span> multiple independent 80–100W sources agree ·
+  <span class="ls-badge ls-badge-med">scaled</span> converted from similar machines ·
+  <span class="ls-badge ls-badge-low">estimated</span> extrapolated — test extra carefully
+</p>
+<div class="ls-field ls-filter">
+  <label for="ls-search">Filter table</label>
+  <input type="search" id="ls-search" placeholder="e.g. acrylic, engrave, 6mm…" autocomplete="off">
+</div>
+<div id="ls-table"></div>
+
+<p class="ls-footnote">Data compiled July 2026 from OMTech, LightBurn documentation and forums, tube manufacturer specs (RECI), makerspace references, and this shop's own test logs, normalized to a 100W tube. Corrections welcome — tell a tool owner or open a PR on the website repo.</p>
+
 <style>
-  .laser-lookup {
-    max-width: 32rem;
+  .ls-danger {
+    margin: 2rem 0;
+    padding: 1.1rem 1.3rem;
+    border: 2px solid var(--signal-dark);
+    border-left-width: 0.6rem;
+    background: var(--paper-deep);
+  }
+
+  .ls-danger-title {
+    margin-bottom: 0.6rem;
+    font-weight: 800;
+    color: var(--signal-dark);
+    letter-spacing: -0.02em;
+  }
+
+  .ls-danger ul {
+    margin-bottom: 0.8rem;
+    padding-left: 1.2rem;
+  }
+
+  .ls-danger li + li {
+    margin-top: 0.35rem;
+  }
+
+  .ls-danger p:last-child {
+    margin-bottom: 0;
+  }
+
+  .ls-machine {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.8rem;
+    margin: 1.5rem 0 2.5rem;
+    padding: 0.9rem 1.1rem;
+    border: 1px solid var(--line);
+    background: var(--paper-deep);
+    font-size: 0.85rem;
+  }
+
+  .ls-machine strong {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-right: 0.35rem;
+  }
+
+  .ls-tool {
     margin: 2rem 0;
     padding: 1.5rem;
     border: 1px solid var(--line);
     background: var(--paper-deep);
   }
 
-  .laser-lookup .input-group {
-    margin-bottom: 1.2rem;
+  .ls-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 1.5rem;
+    margin-bottom: 0.4rem;
   }
 
-  .laser-lookup label {
+  .ls-field {
+    flex: 1 1 14rem;
+  }
+
+  .ls-field label {
     display: block;
     margin-bottom: 0.4rem;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    font-size: 0.72rem;
     font-weight: 700;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
   }
 
-  .laser-lookup select {
+  .ls-field select,
+  .ls-field input {
     width: 100%;
     padding: 0.6rem;
     font-size: 1rem;
     font-family: inherit;
     border: 1px solid var(--line);
+    border-radius: 0;
     background: var(--paper);
     color: var(--ink);
   }
 
-  #result {
-    margin-top: 1rem;
+  /* Restore native table semantics (site CSS sets table { display: block },
+     which strips row/cell roles for screen readers); scroll on the wrappers instead. */
+  #ls-result table,
+  #ls-table table {
+    display: table;
+    overflow-x: visible;
+    margin: 1rem 0;
   }
 
-  #result .settings-table {
+  #ls-result,
+  #ls-table {
+    overflow-x: auto;
+  }
+
+  .ls-visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .ls-tool th,
+  .ls-tool td,
+  #ls-table th,
+  #ls-table td {
+    min-width: 0;
+    padding: 0.55rem 0.7rem;
+  }
+
+  .ls-op-notes {
+    margin: 0.2rem 0 1rem;
+    font-size: 0.92rem;
+  }
+
+  .ls-op-notes li + li {
     margin-top: 0.5rem;
+  }
+
+  .ls-mat-note {
+    margin: 0.8rem 0 0;
+    padding: 0.8rem 1rem;
+    border-left: 0.35rem solid var(--signal);
+    background: var(--paper);
+    font-size: 0.92rem;
+  }
+
+  .ls-badge {
+    display: inline-block;
+    padding: 0.1em 0.5em;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border: 1px solid var(--line);
+    background: var(--paper);
+    white-space: nowrap;
+  }
+
+  .ls-badge-shop { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .ls-badge-high { border-color: var(--line); }
+  .ls-badge-med  { border-style: dashed; }
+  .ls-badge-low  { border-style: dotted; color: var(--muted); }
+
+  .ls-legend {
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+
+  .ls-filter {
+    max-width: 22rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #ls-table .ls-notes-cell {
+    min-width: 18rem;
+    font-size: 0.83rem;
+    color: var(--muted);
+  }
+
+  .ls-footnote {
+    margin-top: 2.5rem;
+    font-size: 0.85rem;
+    color: var(--muted);
   }
 </style>
 
 <script>
-  const materials = {
-    "Acrylic": [
-      {
-        thickness: "1mm",
-        engraving: { speed: 400, power: 5 },
-        cutting: { speed: 30, power: 20, kerf: "0.15mm" }
-      },
-      {
-        thickness: "2mm",
-        engraving: { speed: 400, power: 5 },
-        cutting: { speed: 30, power: 20, kerf: "0.15mm" }
-      },
-      {
-        thickness: "3mm",
-        engraving: { speed: 400, power: 5 },
-        cutting: { speed: 20, power: 55, kerf: "0.15mm" }
-      }
-    ],
-    "Balsawood": [
-      {
-        thickness: "1.6mm",
-        engraving: { speed: 400, power: 5 },
-        cutting: { speed: 50, power: 7 }
-      },
-      {
-        thickness: "3.2mm",
-        engraving: { speed: 400, power: 5 },
-        cutting: { speed: 50, power: 10 }
-      }
-    ],
-    "Cardboard": [
-      {
-        thickness: "4mm",
-        engraving: { speed: 50, power: 15 },
-        cutting: { speed: 50, power: 5 }
-      }
-    ],
-    "Leather": [
-      {
-        thickness: "1.5 mil",
-        cutting: { speed: 30, power: 50 }
-      }
-    ],
-    "Plywood": [
-      {
-        thickness: "3mm",
-        engraving: { speed: 400, power: "5-55" },
-        cutting: { speed: 35, power: 50 }
-      }
-    ]
-  };
+(function () {
+  'use strict';
 
-  function populateMaterialDropdown() {
-    const select = document.getElementById('material');
-    Object.keys(materials).forEach(material => {
-      const option = document.createElement('option');
-      option.value = material;
-      option.textContent = material;
-      select.appendChild(option);
+  // badge: shop = tested on this machine's test board / old shop chart
+  //        high = multiple independent 80-100W sources agree
+  //        med  = scaled from other wattages or one good source
+  //        low  = extrapolated/interpolated
+  // speed mm/s, power %, air: high/low, kerf mm. Engrave "interval" lives in notes.
+  var MATERIALS = [
+    {
+      group: 'Wood',
+      name: 'Plywood — Baltic birch',
+      note: 'True Baltic birch (uniform plies, interior glue) cuts predictably. Big-box plywood is a different animal — see its own entry. Mask show faces with transfer tape to stop smoke staining.',
+      entries: [
+        { thickness: '3mm (1/8")', op: 'Cut', speed: '18–22', power: '65–70', passes: 1, air: 'high', kerf: '0.15–0.2', badge: 'high',
+          notes: 'Start 18 mm/s @ 70%; speed up if edges char. Focus at surface. (The old shop chart lists 35 mm/s @ 50% for generic 3mm ply — verify cut-through on scrap if you use it.) Glue voids in cheap sheets leave uncut webs; plan a razor cleanup.' },
+        { thickness: '6mm (1/4")', op: 'Cut', speed: '9–12', power: '70–75', passes: 1, air: 'high', kerf: '0.18–0.25', badge: 'med',
+          notes: 'Start 10 mm/s @ 70%, focus 2–3mm below surface. At ≤10 mm/s set Min Power = Max Power. The top of the range is above the shop’s ~70% cap — ask a tool owner before running 75%. If char is heavy, prefer 2 passes @ ~60% over one slow pass. Struggling here usually means dirty lens, bad focus, or weak air — not a weak tube.' },
+        { thickness: 'any', op: 'Engrave', speed: '300–350', power: '12–18', passes: 1, air: 'low', kerf: '—', badge: 'high',
+          notes: 'Interval 0.1mm (~254 DPI); 0.08mm for fine detail. Too dark? Lower power before lowering speed. Mask to kill the burn halo.' },
+        { thickness: 'any', op: 'Engrave (photo)', speed: '300–400', power: '10–15', passes: 1, air: 'low', kerf: '—', badge: 'med',
+          notes: 'Interval 0.06–0.08mm (300–423 DPI), Jarvis dither in LightBurn. Run ~20% less power than a normal engrave; calibrate with a grayscale strip on the same sheet.' },
+        { thickness: 'any', op: 'Score', speed: '100–150', power: '10–12', passes: 1, air: 'low', kerf: '~0.15', badge: 'low',
+          notes: 'A score is a fast, weak cut line. Start 120 mm/s @ 10%; if too heavy at the ~10% tube floor, add speed rather than dropping power.' }
+      ]
+    },
+    {
+      group: 'Wood',
+      name: 'Plywood — big-box / luan / underlayment',
+      note: 'Unpredictable cores, glue-filled voids that will not cut at any power, exterior glue that flares. Some panels cut fine — test every new sheet and expect a second pass. Usually only one engrave-grade face.',
+      entries: [
+        { thickness: '3mm (1/8")', op: 'Cut', speed: '~14', power: '70–75', passes: 2, air: 'high', kerf: '0.2–0.3', badge: 'med',
+          notes: 'Roughly 70–80% of Baltic-birch speed; start at 70% — 75% is above the shop’s ~70% cap, ask a tool owner. Finish stubborn glue spots with a hobby knife rather than chasing them with power.' },
+        { thickness: '6mm (1/4")', op: 'Cut', speed: '~8', power: '70–75', passes: 2, air: 'high', kerf: '0.2–0.3', badge: 'med',
+          notes: 'At ≤10 mm/s set Min Power = Max Power. Start at 70%; 75% is above the shop’s ~70% cap — ask a tool owner. Watch voids — they flare. If a section won’t sever after 2 passes it’s glue, not settings.' }
+      ]
+    },
+    {
+      group: 'Wood',
+      name: 'Solid hardwood (maple, walnut)',
+      note: 'Dense hardwoods need roughly half the speed of plywood. Kiln-dried cuts better; resin pockets flare and vary depth.',
+      entries: [
+        { thickness: '6mm (1/4")', op: 'Cut', speed: '6–9', power: '70–75', passes: 1, air: 'high', kerf: '0.2–0.3', badge: 'med',
+          notes: 'Start 7 mm/s @ 70%; 75% is above the shop’s ~70% cap — ask a tool owner. At ≤10 mm/s set Min Power = Max Power. For clean edges: 2 passes @ ~60%, refocusing ~3mm down for the second pass, beats one hot pass.' },
+        { thickness: 'any', op: 'Engrave', speed: '300', power: '18–25', passes: 1, air: 'low', kerf: '—', badge: 'med',
+          notes: 'Interval 0.1mm. Maple gives high-contrast marks; walnut engraves subtle (already dark) — for depth use 2 passes or 200 mm/s @ 30%.' }
+      ]
+    },
+    {
+      group: 'Wood',
+      name: 'Balsa',
+      note: 'Highest fire risk of any wood here, and density varies wildly sheet to sheet — test every sheet, pin down warped ones, remove paper backing. A 100W tube is awkward at balsa’s tiny energies: stay above the ~10% firing floor and control energy with speed.',
+      entries: [
+        { thickness: '1.6mm (1/16")', op: 'Cut', speed: '50', power: '7', passes: 1, air: 'high', kerf: '0.15–0.25', badge: 'shop',
+          notes: 'Tested on this machine, whose tube fires below the usual ~10% floor. If it won’t fire (threshold rises as tubes age), fall back to 35 mm/s @ 10–12%. Go fast, never slow.' },
+        { thickness: '3.2mm (1/8")', op: 'Cut', speed: '50', power: '10', passes: 1, air: 'high', kerf: '0.2–0.3', badge: 'shop',
+          notes: 'Tested on this machine. Community fallback: 25 mm/s @ 15%, adding power in 2% steps. For precision parts, 2 fast light passes char less than 1 slow pass.' }
+      ]
+    },
+    {
+      group: 'Wood',
+      name: 'MDF / draftboard',
+      note: 'Most predictable wood-family material (no grain, no voids) but glue-heavy: acrid smoke, sticky residue that fouls the lens fast, and edges that rub off dark on fingers. It smolders in the kerf rather than flaring — keep watching. “Draftboard” is just branded MDF.',
+      entries: [
+        { thickness: '3mm (1/8")', op: 'Cut', speed: '25–30', power: '60–65', passes: 1, air: 'high', kerf: '0.15–0.2', badge: 'high',
+          notes: 'Focus at surface; mask both faces. Heavily charred edge = raise speed before dropping power.' },
+        { thickness: '6mm (1/4")', op: 'Cut', speed: '10–14', power: '65–70', passes: 1, air: 'high', kerf: '0.2–0.3', badge: 'med',
+          notes: 'Start 12 mm/s @ 65–70%; if not through, drop to 10 mm/s before adding power. Focus ~2mm down. Density varies by supplier — test a corner of each new sheet. Clean the lens after thick MDF sessions.' },
+        { thickness: '12mm (1/2")', op: 'Cut', speed: '3–4', power: '70–75', passes: 1, air: 'high', kerf: '0.3–0.5', badge: 'low',
+          notes: 'At the practical limit of 100W — and above the shop’s ~70% cap: ask a tool owner first. At this speed set Min Power = Max Power. Cleaner option: 2 passes @ 7 mm/s / 70%, dropping focus ~5mm between passes — the sheet must not move. Heavy char and smoke either way; consider two glued 6mm layers instead.' },
+        { thickness: 'any', op: 'Engrave', speed: '300–350', power: '12–18', passes: 1, air: 'low', kerf: '—', badge: 'med',
+          notes: 'Engraves very uniformly. Interval 0.1mm; photos 0.07–0.08mm with Jarvis. Deeper/darker: 300 mm/s @ 25–30% or two light passes. Brush the dust off — don’t wipe.' },
+        { thickness: 'any', op: 'Score', speed: '80–120', power: '10–12', passes: 1, air: 'low', kerf: '—', badge: 'low',
+          notes: 'On 3mm the gap between a score and a through-cut is small — err fast and weak, test on scrap.' }
+      ]
+    },
+    {
+      group: 'Wood',
+      name: 'Hardboard / Masonite',
+      note: 'NOT the same as MDF — denser, and tempered grades contain linseed oil that flares badly. Prefer untempered (dull-faced) hardboard; expect 2–3× slower than MDF.',
+      entries: [
+        { thickness: '3mm (1/8")', op: 'Cut', speed: '10–12', power: '60–65', passes: 1, air: 'high', kerf: '0.15–0.25', badge: 'med',
+          notes: 'A 100W forum datapoint cut it at 7 mm/s @ 70% but with heavy flames. Start faster/weaker and add a pass if needed. Skip shiny-faced (tempered) sheets.' }
+      ]
+    },
+    {
+      group: 'Acrylic',
+      name: 'Acrylic — cast',
+      note: 'ONE PASS ONLY — re-cutting remelts the kerf into a bubbled mess; if it doesn’t sever, slow down on the next test instead. Low air gives flame-polished edges (frosty white edges = too much air). Remove plastic film always; paper masking may stay on the bottom to prevent honeycomb flashback. Cast engraves frosty white and is the default choice.',
+      entries: [
+        { thickness: '1.5mm (1/16")', op: 'Cut', speed: '30', power: '20', passes: 1, air: 'low', kerf: '0.1–0.15', badge: 'shop',
+          notes: 'The old shop chart lists 30 mm/s @ 20% for both 1mm and 2mm — use it for anything in that range. Risk is warping, not failing to cut — favor speed over power. Support on pins or clean honeycomb.' },
+        { thickness: '3mm (1/8")', op: 'Cut', speed: '20', power: '55', passes: 1, air: 'low', kerf: '0.15–0.2', badge: 'shop',
+          notes: 'Tested on this machine. Community 100W values run 30–38% at the same speed — published numbers for this cut vary 2× because tube age and alignment dominate — so you may be able to walk power down on a scrap test. Start at the tabled value.' },
+        { thickness: '4.5mm (3/16")', op: 'Cut', speed: '12–14', power: '45–55', passes: 1, air: 'low', kerf: '0.15–0.25', badge: 'low',
+          notes: 'Interpolated between 3mm and 6mm anchors. Focus 1/3 into the sheet.' },
+        { thickness: '6mm (1/4")', op: 'Cut', speed: '8–10', power: '55–65', passes: 1, air: 'low', kerf: '0.2–0.3', badge: 'med',
+          notes: 'Start 8 mm/s @ 60%, focus 1/3–1/2 into the sheet. White frosty edges: reduce air first, then slow slightly. At ≤10 mm/s set Min Power = Max Power.' },
+        { thickness: '9mm (3/8")', op: 'Cut', speed: '4–5', power: '65–70', passes: 1, air: 'low', kerf: '0.25–0.35', badge: 'low',
+          notes: 'Use the 63.5mm (2.5") lens if fitted; focus mid-depth. Expect slight kerf taper. Elevate the part off the bed so vapor escapes below. Min = Max power at this speed.' },
+        { thickness: '12mm (1/2")', op: 'Cut', speed: '2–3', power: '70–75', passes: 1, air: 'low', kerf: '0.3–0.4', badge: 'med',
+          notes: 'The practical ceiling for this tube — and above the shop’s ~70% cap: check with a tool owner before running. 63.5mm lens, focus mid-depth, Min Power = Max Power. Long slow cuts concentrate heat — watch for sustained flame the whole time.' },
+        { thickness: 'any', op: 'Engrave', speed: '400', power: '5', passes: 1, air: 'low', kerf: '—', badge: 'shop',
+          notes: 'Tested on this machine: 400 mm/s @ 5% gives the best frost (3.5% barely marks; above 5% adds powdery soot) — this tube fires below the usual ~10% floor. If it won’t mark at 5% (threshold rises as the tube ages), step up toward the community range of 12–16%. Interval 0.1mm. For see-through signs, mirror the art and engrave the back face.' },
+        { thickness: 'any', op: 'Score', speed: '80–150', power: '10–13', passes: 1, air: 'low', kerf: '~0.1', badge: 'low',
+          notes: 'Hairline frosted vector lines. Too deep/melty: raise speed before dropping below the tube floor. Set Min close to Max for uniform depth through corners.' }
+      ]
+    },
+    {
+      group: 'Acrylic',
+      name: 'Acrylic — extruded',
+      note: 'Cheaper; cuts ~10% easier than cast, but stress-cracks near cuts, welds narrow kerfs shut, warps, and can drip flaming droplets (cast crackles but doesn’t drip) — watch closely. Engraves dingy gray: use cast when the engraving is the point.',
+      entries: [
+        { thickness: '3mm (1/8")', op: 'Cut', speed: '20–24', power: '28–34', passes: 1, air: 'low', kerf: '0.15–0.2', badge: 'low',
+          notes: 'Roughly cast settings minus ~10% power. Avoid tight interior corners — stress cracks can appear hours later.' },
+        { thickness: '6mm (1/4")', op: 'Cut', speed: '9–11', power: '50–60', passes: 1, air: 'low', kerf: '0.2–0.3', badge: 'low',
+          notes: 'Higher melt-back and kerf-rewelding risk than cast on tight geometry. Fine for plain cutting; use cast for cosmetic or solvent-bonded parts.' },
+        { thickness: 'any', op: 'Engrave', speed: '350–400', power: '12–16', passes: 1, air: 'low', kerf: '—', badge: 'med',
+          notes: 'Expect a low-contrast gray mark, not frost. Adding 3–5% power or back-painting the pocket improves visibility.' }
+      ]
+    },
+    {
+      group: 'Leather, paper & board',
+      name: 'Leather — veg-tan ONLY',
+      note: 'Vegetable-tanned only. Chrome-tan (blue/gray flesh side or core) and “pleather” are prohibited — chromium and chlorine fumes. Even veg-tan smells strongly of burnt hair; run full exhaust. Misting the leather with water before cutting reduces char and flare. Mask the grain side.',
+      entries: [
+        { thickness: '1.5–2mm (4–5 oz)', op: 'Cut', speed: '30', power: '50', passes: 1, air: 'high', kerf: '0.2–0.4', badge: 'shop',
+          notes: 'Tested on this machine. Community values run faster and weaker (40–50 mm/s @ 40%) — worth a scrap test if edges char. Cut suede-side down where possible. Every hide behaves differently — test.' },
+        { thickness: '3mm (7–8 oz)', op: 'Cut', speed: '15–20', power: '45', passes: 1, air: 'high', kerf: '0.3–0.5', badge: 'med',
+          notes: 'Prefer a second pass over more power — overpowered leather chars brittle and sooty. 8oz+: plan 2 passes.' },
+        { thickness: 'any', op: 'Engrave', speed: '300', power: '12–15', passes: 1, air: 'low', kerf: '—', badge: 'high',
+          notes: 'Start 300 mm/s @ 12%, raise in 2–3% steps. Interval 0.1mm; photos 0.06–0.08mm @ 20–25%. Low air — hard air drives soot into the grain. Clean after with a soft brush.' }
+      ]
+    },
+    {
+      group: 'Leather, paper & board',
+      name: 'Paper & cardstock',
+      note: 'The anti-scorch rule: minimum reliable power + maximum speed. Brown edges mean too slow, not too weak. Pin or magnet sheets flat — they lift at these speeds. Low, gentle air only.',
+      entries: [
+        { thickness: 'copy paper (80–120gsm)', op: 'Cut', speed: '200–300', power: '8–10', passes: 1, air: 'low', kerf: '0.1–0.2', badge: 'med',
+          notes: 'Runs at the tube’s firing floor — if it won’t fire, raise power and speed together. A sacrificial backing sheet gives the cleanest back face.' },
+        { thickness: 'cardstock (200–300gsm)', op: 'Cut', speed: '150–200', power: '10–12', passes: 1, air: 'low', kerf: '0.1–0.2', badge: 'med',
+          notes: 'If not through at 12%, add a second pass before adding power. For filigree, slow 10–15% with a matching power cut so corners don’t overburn.' }
+      ]
+    },
+    {
+      group: 'Leather, paper & board',
+      name: 'Corrugated cardboard',
+      note: 'THE most fire-prone common material: the flutes feed oxygen to the cut, hide flames inside the board, and hold embers that can reignite minutes after the job. Never step away, even briefly. Remove cut stock immediately and don’t stack fresh-cut sheets.',
+      entries: [
+        { thickness: '4mm single-wall', op: 'Cut', speed: '50–70', power: '18–20', passes: 1, air: 'high', kerf: '0.3–0.5', badge: 'med',
+          notes: 'Max air assist — it’s the primary flame suppressor. If the bottom liner won’t sever, use a second low-power pass, not more power. (The old shop chart’s 50 mm/s @ 5% for cutting looks transposed with its engrave value — 5% won’t sever 4mm board; verify against the test board.)' },
+        { thickness: 'any', op: 'Engrave', speed: '300', power: '10–12', passes: 1, air: 'high', kerf: '—', badge: 'med',
+          notes: 'The top liner is ~0.3mm — a few % separates a nice toasted mark from punching through. Coarse interval (0.15–0.2mm) is plenty on kraft. Same fire vigilance as cutting.' }
+      ]
+    },
+    {
+      group: 'Leather, paper & board',
+      name: 'Chipboard (bookboard, uncoated)',
+      note: 'Dense compressed paper — behaves like very heavy cardstock, with less internal fire risk than corrugated (no flutes) but ready edge-char. Recycled content varies wildly; test every batch.',
+      entries: [
+        { thickness: '1.5–2mm (1/16")', op: 'Cut', speed: '30–40', power: '20–25', passes: 1, air: 'high', kerf: '0.2–0.4', badge: 'low',
+          notes: 'Start 30 mm/s @ 20%; add a second pass before adding power. Edges will be brown regardless — design for it.' }
+      ]
+    },
+    {
+      group: 'Metal marking',
+      name: 'Stainless steel + CerMark/LBT100',
+      note: 'A CO2 laser cannot engrave bare metal — the compound is heat-fused on. Prep is everything: alcohol-clean, one THIN even coat (barely opaque), fully dry, mark, wash off, rub-test. A mark that wipes off means too fast or too thick a coat — slow down 25% rather than raising power.',
+      entries: [
+        { thickness: 'any', op: 'Mark', speed: '175–225', power: '55–65', passes: 1, air: 'low', kerf: '—', badge: 'high',
+          notes: 'Start 200 mm/s @ 60%, interval 0.05–0.08mm (320–500 DPI; 600 DPI for fine detail). Run a speed-sweep test grid at fixed 60% on scrap first. Good marks are dark gray-black and survive vigorous rubbing.' }
+      ]
+    },
+    {
+      group: 'Metal marking',
+      name: 'Aluminum + CerMark/LBT100',
+      note: 'The hard case: aluminum wicks heat away and needs 2–4× the energy of stainless; marks come out gray, and outright failures are common. Raw aluminum only — not anodized or coated (anodized parts mark directly: see the “Anodized aluminum” entry).',
+      entries: [
+        { thickness: 'any', op: 'Mark', speed: '80–120', power: '~90', passes: 1, air: 'low', kerf: '—', badge: 'med',
+          notes: 'Needs near-max power — above the shop’s ~70% tube-life cap, so clear it with a tool owner and keep jobs short. Watch the ammeter during the job: back power off if it reads over ~26mA, and never let it reach 28mA. 500–1000 DPI (interval 0.03–0.05mm). If faint, step speed DOWN toward 60–80 mm/s. Test grid is mandatory.' }
+      ]
+    },
+    {
+      group: 'Metal marking',
+      name: 'Anodized aluminum — direct mark',
+      note: 'The one metal a CO2 laser marks with no compound at all: the beam bleaches the anodize dye, leaving a white/silver mark on colored anodize. Bare or clear-anodized parts show little contrast. No compound, no washing — just clean the surface.',
+      entries: [
+        { thickness: 'any', op: 'Mark', speed: '~300', power: '20–30', passes: 1, air: 'low', kerf: '—', badge: 'low',
+          notes: 'Start 300 mm/s @ 20%, interval 0.05–0.08mm, and adjust on scrap — anodize thickness varies by part. Darker anodize colors give the best contrast.' }
+      ]
+    },
+    {
+      group: 'Metal marking',
+      name: 'Stainless + dry moly spray (budget)',
+      note: 'Cheap CerMark substitute (~$15/can dry moly lube): 2–3 thin coats, dry ~1 min between. Marks are less durable and less black; MoS2 makes SO2 when lasered — full exhaust, and wipe down the machine after. Works poorly on aluminum; skip that combination.',
+      entries: [
+        { thickness: 'any', op: 'Mark', speed: '55–90', power: '40–50', passes: 1, air: 'low', kerf: '—', badge: 'med',
+          notes: 'Very speed-sensitive (slower = darker) and reports vary widely — treat 70 mm/s @ 45% as center and run a test grid. Interval 0.05–0.08mm. Wash residue off with water.' }
+      ]
+    }
+  ];
+
+  var BADGE_LABELS = { shop: 'shop log', high: 'corroborated', med: 'scaled', low: 'estimated' };
+
+  function badgeHtml(b) {
+    return '<span class="ls-badge ls-badge-' + b + '">' + BADGE_LABELS[b] + '</span>';
+  }
+
+  function esc(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  var materialSel = document.getElementById('ls-material');
+  var thicknessSel = document.getElementById('ls-thickness');
+  var resultDiv = document.getElementById('ls-result');
+
+  function populateMaterials() {
+    materialSel.innerHTML = '<option value="">— select material —</option>';
+    var groups = {};
+    MATERIALS.forEach(function (m, i) {
+      if (!groups[m.group]) {
+        groups[m.group] = document.createElement('optgroup');
+        groups[m.group].label = m.group;
+        materialSel.appendChild(groups[m.group]);
+      }
+      var opt = document.createElement('option');
+      opt.value = String(i);
+      opt.textContent = m.name;
+      groups[m.group].appendChild(opt);
     });
   }
 
-  function updateThicknessOptions() {
-    const materialName = document.getElementById('material').value;
-    const thicknessSelect = document.getElementById('thickness');
-    thicknessSelect.innerHTML = '<option value="">-- Select Thickness --</option>';
-
-    if (materialName && materials[materialName]) {
-      materials[materialName].forEach(item => {
-        const option = document.createElement('option');
-        option.value = item.thickness;
-        option.textContent = item.thickness;
-        thicknessSelect.appendChild(option);
-      });
-    }
-
-    lookupSettings();
+  function selectedMaterial() {
+    return materialSel.value === '' ? null : MATERIALS[Number(materialSel.value)];
   }
 
-  function lookupSettings() {
-    const materialName = document.getElementById('material').value;
-    const thickness = document.getElementById('thickness').value;
-    const resultDiv = document.getElementById('result');
-
-    if (!materialName || !thickness) {
-      resultDiv.innerHTML = "<p>Please select both material and thickness.</p>";
+  function populateThicknesses() {
+    thicknessSel.innerHTML = '';
+    var m = selectedMaterial();
+    if (!m) {
+      thicknessSel.innerHTML = '<option value="">—</option>';
+      render();
       return;
     }
+    var seen = [];
+    m.entries.forEach(function (e) {
+      if (e.thickness !== 'any' && seen.indexOf(e.thickness) === -1) seen.push(e.thickness);
+    });
+    if (seen.length === 0) {
+      thicknessSel.innerHTML = '<option value="any">any / surface</option>';
+    } else {
+      seen.forEach(function (t) {
+        var opt = document.createElement('option');
+        opt.value = t;
+        opt.textContent = t;
+        thicknessSel.appendChild(opt);
+      });
+    }
+    render();
+  }
 
-    const material = materials[materialName].find(m => m.thickness === thickness);
-
-    if (!material) {
-      resultDiv.innerHTML = "<p>Settings not found for the selected combination.</p>";
+  function render() {
+    var m = selectedMaterial();
+    var statusEl = document.getElementById('ls-status');
+    if (!m) {
+      resultDiv.innerHTML = '<p>Select a material to see starting settings.</p>';
+      statusEl.textContent = '';
       return;
     }
-
-    let html = `<h3>Settings for ${materialName} (${thickness})</h3>`;
-    html += "<table class='settings-table'>";
-    html += "<tr><th>Operation</th><th>Speed (mm/s)</th><th>Power</th><th>Kerf Width</th></tr>";
-
-    if (material.engraving) {
-      html += `<tr><td>Engraving</td><td>${material.engraving.speed}</td><td>${material.engraving.power}</td><td>-</td></tr>`;
-    }
-
-    if (material.cutting) {
-      html += `<tr><td>Cutting</td><td>${material.cutting.speed}</td><td>${material.cutting.power}</td><td>${material.cutting.kerf || '-'}</td></tr>`;
-    }
-
-    html += "</table>";
-
-    if (materialName === "Acrylic" && thickness === "3mm") {
-      html += "<p><strong>Note:</strong> Power setting 4 and 5 have little visible difference except some minor lightening at the beginnings of cuts at power 4. Power 3.5 produces very light engraving, almost non-existent, with no engraving at the beginnings of cuts. Above power 5, little difference is visible, but powdery soot becomes more prevalent. Power 5 seems to be the best setting to produce frosted effects.</p>";
-    }
-
+    var t = thicknessSel.value;
+    var rows = m.entries.filter(function (e) { return e.thickness === t || e.thickness === 'any'; });
+    statusEl.textContent = m.name + (t !== 'any' ? ', ' + t : '') + ': ' + rows.length + ' operation' + (rows.length === 1 ? '' : 's') + ' shown.';
+    var html = '<h3>' + esc(m.name) + (t !== 'any' ? ' — ' + esc(t) : '') + '</h3>';
+    html += '<table><thead><tr><th scope="col">Operation</th><th scope="col">Speed (mm/s)</th><th scope="col">Power (%)</th><th scope="col">Passes</th><th scope="col">Air</th><th scope="col">Kerf (mm)</th><th scope="col">Source</th></tr></thead><tbody>';
+    rows.forEach(function (e) {
+      html += '<tr><td><strong>' + esc(e.op) + '</strong>' + (e.thickness === 'any' && t !== 'any' ? ' <span style="color:var(--muted)">(any thickness)</span>' : '') + '</td>' +
+        '<td>' + esc(e.speed) + '</td><td>' + esc(e.power) + '</td><td>' + e.passes + '</td><td>' + esc(e.air) + '</td><td>' + esc(e.kerf) + '</td><td>' + badgeHtml(e.badge) + '</td></tr>';
+    });
+    html += '</tbody></table>';
+    html += '<p class="ls-legend">' + badgeHtml('shop') + ' tested on this machine · ' + badgeHtml('high') + ' multiple sources agree · ' + badgeHtml('med') + ' scaled from similar machines · ' + badgeHtml('low') + ' estimated — test extra carefully</p>';
+    html += '<ul class="ls-op-notes">';
+    rows.forEach(function (e) {
+      html += '<li><strong>' + esc(e.op) + ':</strong> ' + esc(e.notes) + '</li>';
+    });
+    html += '</ul>';
+    if (m.note) html += '<p class="ls-mat-note">' + esc(m.note) + '</p>';
     resultDiv.innerHTML = html;
   }
 
-  populateMaterialDropdown();
+  function renderTable(filter) {
+    var q = (filter || '').trim().toLowerCase();
+    var html = '<table><thead><tr><th scope="col">Material</th><th scope="col">Thickness</th><th scope="col">Operation</th><th scope="col">Speed (mm/s)</th><th scope="col">Power (%)</th><th scope="col">Passes</th><th scope="col">Air</th><th scope="col">Kerf (mm)</th><th scope="col">Source</th><th scope="col">Notes</th></tr></thead><tbody>';
+    var shown = 0;
+    MATERIALS.forEach(function (m) {
+      m.entries.forEach(function (e) {
+        var hay = (m.group + ' ' + m.name + ' ' + e.thickness + ' ' + e.op + ' ' + BADGE_LABELS[e.badge] + ' ' + e.notes).toLowerCase();
+        if (q && hay.indexOf(q) === -1) return;
+        shown++;
+        html += '<tr><td>' + esc(m.name) + '</td><td>' + esc(e.thickness) + '</td><td>' + esc(e.op) + '</td>' +
+          '<td>' + esc(e.speed) + '</td><td>' + esc(e.power) + '</td><td>' + e.passes + '</td><td>' + esc(e.air) + '</td><td>' + esc(e.kerf) + '</td>' +
+          '<td>' + badgeHtml(e.badge) + '</td><td class="ls-notes-cell">' + esc(e.notes) + '</td></tr>';
+      });
+    });
+    html += '</tbody></table>';
+    if (!shown) html = '<p>No entries match “' + esc(filter) + '”.</p>';
+    document.getElementById('ls-table').innerHTML = html;
+  }
+
+  materialSel.addEventListener('change', populateThicknesses);
+  thicknessSel.addEventListener('change', render);
+  document.getElementById('ls-search').addEventListener('input', function (e) {
+    renderTable(e.target.value);
+  });
+
+  populateMaterials();
+  populateThicknesses();
+  renderTable('');
+})();
 </script>

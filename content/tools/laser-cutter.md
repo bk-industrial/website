@@ -13,12 +13,13 @@ The shop has a laser cutting and engraving machine. The model is: [AF2440-100 - 
 
 ## ⚠️ Safety
 
-- NEVER cut PVC / Polycarbonate / Lexan. It makes chlorine gas. Not only will it damage the laser, it will also damage YOU.
+- NEVER cut PVC or anything vinyl. It makes chlorine gas. Not only will it damage the laser, it will also damage YOU.
+- NEVER cut Polycarbonate / Lexan. It catches fire, cuts terribly, and soots up the optics — and it looks just like acrylic, so identify sheet plastic before cutting.
 - You MUST stay with the laser while it is cutting. Do not leave it unattended.
 - Always watch the laser begin cutting when sending it a job. Make sure it begins doing what you intended it to do.
 - Do NOT open the laser door with the laser key turned to ON.
 - Do NOT remove the key from the laser unless it is turned to OFF.
-- It safe to press the emergency stop button at any time. Be ready to press it if you ever become unsure of the tool's behavior.
+- It is safe to press the emergency stop button at any time. Be ready to press it if you ever become unsure of the tool's behavior.
 - This tool can start fires inside of it. In the event of fire, press the emergency stop button. If the fire continues, smother it with the fire blanket at the corner of Joe's workdesk and the wood shop. Use the fire extinguisher as a last resort.
 - You MUST be trained on the laser before using it. If possible, also have experienced other members present for the first few times you use the tool.
 
@@ -57,11 +58,13 @@ The shop has a laser cutting and engraving machine. The model is: [AF2440-100 - 
 
 * MDF (medium density fiberboard)
 * Plywood (thicker than 1/4" will be difficult to cut through)
+* Solid wood (hardwoods, balsa — balsa is a serious fire risk, watch it closely)
+* Hardboard / Masonite (untempered only — tempered contains oil and flares badly)
 * Acrylic plastic
-* Paper
+* Paper, cardstock, and chipboard
 * Cardboard
-* Leather (only uncoated real leather! No vinyl, no coated leather)
-* Stainless steel and aluminum (with Cermark laser etching spray)
+* Leather (vegetable-tanned, uncoated real leather only! No chrome-tan, no vinyl, no coated leather)
+* Stainless steel and aluminum (with Cermark laser etching spray), anodized aluminum (marks directly)
 
 ### Extra materials?
 
