@@ -1,0 +1,12 @@
+<div class="site-header">
+  <a class="brand" href="{{ "" | relURL }}" aria-label="Brooklyn Industrial Arts home">
+    <span class="brand-mark" aria-hidden="true">BIA</span>
+    <span class="brand-name">Brooklyn<br>Industrial Arts</span>
+  </a>
+  <nav aria-label="Primary navigation">
+    {{- range .Site.Menus.main }}
+    <a href="{{ .URL }}">{{ .Name }}</a>
+    {{- end }}
+    <a href="{{ "tools/" | relURL }}">Tools</a>
+  </nav>
+</div>

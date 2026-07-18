@@ -5,6 +5,8 @@ description = "X-Carve CNC router with 750x750x100mm work envelope. Safety proce
 
 # The CNC Router
 
+![X-Carve CNC router in its enclosure at Brooklyn Industrial Arts](/images/cnc-router-enclosure.jpg)
+
 ## [X-Carve](https://shop.inventables.com/products/x-carve-1)
 
 The X-Carve CNC router works on an XY plane with limited Z-depth, with a work envelope of 750mm x 750mm x 100mm. It is best suited for cutting wood, particleboard, and (with special dust collection), hard plastics.
