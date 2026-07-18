@@ -13,7 +13,13 @@ Brooklyn Industrial Arts allows members to bring their own workbench and tools. 
 
 Read our [shop rules and safety policies](/operations/shop-rules) and browse the [full list of available tools](/tools).
 
-![Brooklyn Industrial Arts workshop floor with shared tools and equipment](/images/IMG_5150.jpeg)
+![Lumber storage rack in the Brooklyn Industrial Arts wood shop](/images/workshop-lumber-rack.jpg)
+
+![Hand tool storage and welding bench corner at Brooklyn Industrial Arts](/images/workshop-hand-tools-corner.jpg)
+
+![Workbench desk with a view of North Brooklyn at Brooklyn Industrial Arts](/images/workshop-window-desk.jpg)
+
+![Calipers on a workbench at Brooklyn Industrial Arts](/images/workshop-calipers-detail.jpg)
 
 ----
 

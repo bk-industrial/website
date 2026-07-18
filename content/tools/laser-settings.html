@@ -1,0 +1,183 @@
++++
+title = "Laser Cutter Settings Lookup"
+description = "Interactive lookup tool for laser cutter engraving and cutting speed/power settings by material and thickness at Brooklyn Industrial Arts."
++++
+
+<h1>Laser Cutter Settings Lookup</h1>
+
+<p>Select a material and thickness to see recommended engraving and cutting settings for the shop's laser cutter. These are starting points, not guarantees. Always test on scrap first.</p>
+
+<div class="laser-lookup">
+  <div class="input-group">
+    <label for="material">Select Material:</label>
+    <select id="material" onchange="updateThicknessOptions()">
+      <option value="">-- Select Material --</option>
+    </select>
+  </div>
+  <div class="input-group">
+    <label for="thickness">Select Thickness:</label>
+    <select id="thickness" onchange="lookupSettings()">
+      <option value="">-- Select Thickness --</option>
+    </select>
+  </div>
+  <div id="result"></div>
+</div>
+
+<style>
+  .laser-lookup {
+    max-width: 32rem;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    background: var(--paper-deep);
+  }
+
+  .laser-lookup .input-group {
+    margin-bottom: 1.2rem;
+  }
+
+  .laser-lookup label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+  }
+
+  .laser-lookup select {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 1rem;
+    font-family: inherit;
+    border: 1px solid var(--line);
+    background: var(--paper);
+    color: var(--ink);
+  }
+
+  #result {
+    margin-top: 1rem;
+  }
+
+  #result .settings-table {
+    margin-top: 0.5rem;
+  }
+</style>
+
+<script>
+  const materials = {
+    "Acrylic": [
+      {
+        thickness: "1mm",
+        engraving: { speed: 400, power: 5 },
+        cutting: { speed: 30, power: 20, kerf: "0.15mm" }
+      },
+      {
+        thickness: "2mm",
+        engraving: { speed: 400, power: 5 },
+        cutting: { speed: 30, power: 20, kerf: "0.15mm" }
+      },
+      {
+        thickness: "3mm",
+        engraving: { speed: 400, power: 5 },
+        cutting: { speed: 20, power: 55, kerf: "0.15mm" }
+      }
+    ],
+    "Balsawood": [
+      {
+        thickness: "1.6mm",
+        engraving: { speed: 400, power: 5 },
+        cutting: { speed: 50, power: 7 }
+      },
+      {
+        thickness: "3.2mm",
+        engraving: { speed: 400, power: 5 },
+        cutting: { speed: 50, power: 10 }
+      }
+    ],
+    "Cardboard": [
+      {
+        thickness: "4mm",
+        engraving: { speed: 50, power: 15 },
+        cutting: { speed: 50, power: 5 }
+      }
+    ],
+    "Leather": [
+      {
+        thickness: "1.5 mil",
+        cutting: { speed: 30, power: 50 }
+      }
+    ],
+    "Plywood": [
+      {
+        thickness: "3mm",
+        engraving: { speed: 400, power: "5-55" },
+        cutting: { speed: 35, power: 50 }
+      }
+    ]
+  };
+
+  function populateMaterialDropdown() {
+    const select = document.getElementById('material');
+    Object.keys(materials).forEach(material => {
+      const option = document.createElement('option');
+      option.value = material;
+      option.textContent = material;
+      select.appendChild(option);
+    });
+  }
+
+  function updateThicknessOptions() {
+    const materialName = document.getElementById('material').value;
+    const thicknessSelect = document.getElementById('thickness');
+    thicknessSelect.innerHTML = '<option value="">-- Select Thickness --</option>';
+
+    if (materialName && materials[materialName]) {
+      materials[materialName].forEach(item => {
+        const option = document.createElement('option');
+        option.value = item.thickness;
+        option.textContent = item.thickness;
+        thicknessSelect.appendChild(option);
+      });
+    }
+
+    lookupSettings();
+  }
+
+  function lookupSettings() {
+    const materialName = document.getElementById('material').value;
+    const thickness = document.getElementById('thickness').value;
+    const resultDiv = document.getElementById('result');
+
+    if (!materialName || !thickness) {
+      resultDiv.innerHTML = "<p>Please select both material and thickness.</p>";
+      return;
+    }
+
+    const material = materials[materialName].find(m => m.thickness === thickness);
+
+    if (!material) {
+      resultDiv.innerHTML = "<p>Settings not found for the selected combination.</p>";
+      return;
+    }
+
+    let html = `<h3>Settings for ${materialName} (${thickness})</h3>`;
+    html += "<table class='settings-table'>";
+    html += "<tr><th>Operation</th><th>Speed (mm/s)</th><th>Power</th><th>Kerf Width</th></tr>";
+
+    if (material.engraving) {
+      html += `<tr><td>Engraving</td><td>${material.engraving.speed}</td><td>${material.engraving.power}</td><td>-</td></tr>`;
+    }
+
+    if (material.cutting) {
+      html += `<tr><td>Cutting</td><td>${material.cutting.speed}</td><td>${material.cutting.power}</td><td>${material.cutting.kerf || '-'}</td></tr>`;
+    }
+
+    html += "</table>";
+
+    if (materialName === "Acrylic" && thickness === "3mm") {
+      html += "<p><strong>Note:</strong> Power setting 4 and 5 have little visible difference except some minor lightening at the beginnings of cuts at power 4. Power 3.5 produces very light engraving, almost non-existent, with no engraving at the beginnings of cuts. Above power 5, little difference is visible, but powdery soot becomes more prevalent. Power 5 seems to be the best setting to produce frosted effects.</p>";
+    }
+
+    resultDiv.innerHTML = html;
+  }
+
+  populateMaterialDropdown();
+</script>

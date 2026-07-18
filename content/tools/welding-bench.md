@@ -1,3 +1,8 @@
++++
+title = "Welding Bench"
+description = "Welding bench, F-clamps, vise, and punch press for hot work and metal forming at Brooklyn Industrial Arts shared workshop in North Brooklyn."
++++
+
 # Welding Bench
 
 The welding bench is for hot work, and is also useful for metal forming tasks which require heavier blows and more force than other workbenches in the shop can accommodate. It is equipped with a number of workholding tools.

@@ -5,6 +5,10 @@ description = "OMTech AF2440-100 laser cutter with 24x40 inch work area. Safety 
 
 # OMTech Laser Cutter
 
+![OMTech laser cutter control panel at Brooklyn Industrial Arts](/images/laser-cutter-panel.jpg)
+
+**[Look up laser cutter settings by material and thickness →](/tools/laser-settings/)**
+
 The shop has a laser cutting and engraving machine. The model is: [AF2440-100 - 100W CO2 Laser Engraver Cutting Machine with 24" x 40" Working Area and Auto Focus](https://omtechlaser.com/products/100w-co2-laser-engraver-cutter-usb-1060-us?_pos=1&_sid=e33f81ce7&_ss=r)
 
 ## ⚠️ Safety
@@ -67,7 +71,7 @@ Generally, bring your own, or make sure to ask others when using their materials
 
 ### Power settings
 
-Refer to the test cut pieces near the laser area for power settings. Generally, use the following procedure to determine the settings:
+Check the [laser cutter settings lookup](/tools/laser-settings/) for starting speed/power values by material and thickness. Refer to the test cut pieces near the laser area for power settings. Generally, use the following procedure to determine the settings:
 
 1. Find a test cut piece that is close to your material.
 2. Experiment with those settings on a throwaway piece of your material. **Monitor closely!**

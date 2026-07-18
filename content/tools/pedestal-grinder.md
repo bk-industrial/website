@@ -5,6 +5,8 @@ description = "6-inch pedestal grinder safety, usage information, and wheel dres
 
 # 6" Pedestal Grinder
 
+![6-inch pedestal grinder and grinding wheel storage at Brooklyn Industrial Arts](/images/pedestal-grinder-wheels.jpg)
+
 ## ⚠️ Safety:
 
 - Wear eye and hearing protection.

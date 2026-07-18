@@ -21,6 +21,9 @@ ignoreErrors = ["error-disable-taxonomy"]
   changefreq = "monthly"
   priority = 0.5
 
+[security]
+  allowContent = ['^text/(html|markdown|plain)$']
+
 [params]
 # The "description" of your website. This is used in the meta data of your generated html.
 description = "Brooklyn Industrial Arts is a shared workshop and makerspace in North Brooklyn, NYC. 24/7 access to CNC routers, laser cutters, woodworking and metalworking tools for makers, designers, and engineers."
