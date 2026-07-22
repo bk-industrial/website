@@ -7,7 +7,22 @@
     --line: #18201e;
     --signal: #c94732;
     --signal-dark: #9d321f;
+    --stripe: rgba(24, 32, 30, 0.045);
     --measure: 68rem;
+    color-scheme: light dark;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #14181a;
+      --paper-deep: #1f2427;
+      --ink: #eae5d9;
+      --muted: #9aa39c;
+      --line: #eae5d9;
+      --signal: #d9573e;
+      --signal-dark: #ff7a56;
+      --stripe: rgba(255, 255, 255, 0.06);
+    }
   }
 
   * {
@@ -221,7 +236,7 @@
   }
 
   tr:nth-child(even) {
-    background: rgba(24, 32, 30, 0.045);
+    background: var(--stripe);
   }
 
   code {
